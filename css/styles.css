@@ -1,0 +1,175 @@
+* {
+  transition: 0.1s all;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  font-family: "Noto Sans SC";
+  padding: 0;
+  margin: 0;
+}
+
+.top-bar {
+  width: 100vw;
+  height: 5px;
+  background-color: rgb(24, 123, 9);
+}
+
+.banner-canvas-holder {
+  padding-top: 3em;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-screen {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+.banner-title {
+  text-align: center;
+  font-size: 50px;
+  user-select: none;
+}
+
+.banner-subtitle {
+  font-size: 15px;
+  color: #777;
+  user-select: none;
+}
+
+.introduction-title {
+  font-size: 40px;
+  user-select: none;
+  text-align: center;
+  font-weight: 1000;
+}
+
+.introduction-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.introduction-bar__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.introduction-item {
+  padding: 5px 1em;
+  margin-right: -1px;
+  border-bottom: 3px rgb(24, 123, 9) solid;
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  color: #444444;
+  user-select: none;
+  text-decoration: none;
+}
+
+.introduction-item:hover {
+  background-color: rgba(24, 123, 9, 0.9);
+  color: white;
+}
+
+.introduction-item:active, .introduction-item__active {
+  background-color: rgb(24, 123, 9);
+  color: white;
+}
+
+.introduction-item:first-child {
+  border-left: 0;
+}
+
+.introduction-item:last-child {
+  border-right: 0;
+}
+
+.article, .footer {
+  padding: 0 10%;
+  margin-top: 2em;
+  font-family: "Noto Serif SC";
+}
+
+.footer {
+  margin-bottom: 5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__title {
+  font-size: 30px;
+}
+
+.footer b {
+  font-weight: 1000;
+  background-color: rgb(24, 123, 9);
+  color: #ffffff;
+}
+
+.article > p:first-child:first-letter {
+  float: left;
+  font-size: 45px;
+  font-weight: 1000;
+}
+
+.image-holder {
+  transform: rotate(-1deg);
+  padding: 2em;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  max-width: 500px;
+}
+
+.image-holder > img {
+  width: 100%;
+}
+
+.image-holder__description {
+  color: #434343;
+  font-family: "Noto Sans SC";
+  font-size: 14px;
+  text-align: center;
+  font-weight: 1000;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+
+.divider {
+  margin: 5em 2rem;
+  padding: 0 20%;
+  height: 3px;
+  border-top: 1px rgba(24, 123, 9, 0.5) solid;
+  border-bottom: 1px rgba(24, 123, 9, 0.5) solid;
+}
+
+.card-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.card {
+  font-family: "Noto Sans SC";
+  margin: 0.1rem;
+  padding: 0.5rem;
+  user-select: none;
+  border: 1px rgb(24, 123, 9) solid;
+  border-radius: 5px;
+}
+
+.card__title {
+  font-size: 14px;
+  font-weight: 1000;
+}

@@ -1,0 +1,19 @@
+* {
+  transition: 0.1s all;
+}
+
+.banner-canvas-holder {
+  padding-top: 1rem;
+}
+
+.banner-title {
+  font-size: 40px;
+}
+
+.banner-subtitle {
+  font-size: 12px;
+}
+
+.introduction-item {
+  font-size: 0.8em;
+}
