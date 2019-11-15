@@ -14,21 +14,25 @@ body {
   margin: 0;
 }
 
-a, .link {
+.article a, .link {
   font-weight: 1000;
   color: rgb(24, 123, 9);
   border-bottom: 1px rgb(24, 123, 9) dotted;
   text-decoration: none;
 }
 
-a:hover, .link:hover {
+.article a:hover, .link:hover {
   color: rgb(14, 63, 7);
   broder-bottom: 2px rgb(14, 63, 7) dotted;
 }
 
-a:active, .link:active {
+.article a:active, .link:active {
   background-color: rgb(14, 63, 7);
   color: white;
+}
+
+img {
+  width: 100%; /* just in case */
 }
 
 .top-bar {
@@ -93,6 +97,7 @@ a:active, .link:active {
   color: #444444;
   user-select: none;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .introduction-item:hover {
@@ -123,11 +128,11 @@ a:active, .link:active {
   margin-bottom: 5em;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .footer__title {
   font-size: 30px;
+  user-select: none;
 }
 
 .footer b {
@@ -179,16 +184,23 @@ a:active, .link:active {
   border-bottom: 1px rgba(24, 123, 9, 0.5) solid;
 }
 
+.snip {
+  margin: 2em 5em;
+  padding: 0 20%;
+  height: 1px;
+  border-top: 2px rgba(24, 123, 9, 0.5) dashed;
+}
+
 .card-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-top: 1rem;
 }
 
 .card {
   font-family: "Noto Sans SC";
-  margin: 0.1rem;
+  margin: 0.2rem;
   padding: 0.5rem;
   user-select: none;
   border: 1px rgb(24, 123, 9) solid;
@@ -223,4 +235,107 @@ a:active, .link:active {
 
 .card:active {
   background-color: rgb(10, 60, 4);
+}
+
+.big-card {
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 3px 7px #eeeeee;
+  padding: 1em 1em;
+  user-select: none;
+  max-width: 38%;
+  display: block;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 687px) {
+  .big-card {
+    max-width: 100%;
+    width: 90%;
+  }
+}
+
+.big-card__title {
+  color: rgb(24, 123, 8);
+  font-weight: 1000;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px #eeeeee solid;
+}
+
+.big-card__content {
+  font-size: 0.9em;
+  color: #999999;
+}
+
+.big-card__empty {
+  width: 90%;
+  max-width: 90%;
+  text-align: center;
+  color: #8a8a8a;
+  font-weight: 1000;
+}
+
+.big-card:hover {
+  box-shadow: 0 4px 8px #aaaaaa;
+  border: 1px solid rgb(48, 200, 16);
+}
+
+.big-card:active {
+  border: 1px solid rgb(48, 200, 16);
+  box-shadow: 0 3px 0 3px #fafafa;
+}
+
+.post-info {
+  font-size: 0.83em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67.em
+}
+
+.post-info > div {
+  font-size: inherit;
+  overflow-wrap: break-word;
+}
+
+.tag {
+  background-color: rgb(24, 123, 9);
+  color: white;
+  padding: 0.2em 0.7em;
+  margin: 0.1em 0.1em;
+  border-radius: 5px;
+  line-height: 2em;
+  user-select: none;
+}
+
+.text-divider {
+  font-family: "Noto Sans SC";
+  user-select: none;
+  text-align: center;
+  margin: 5em 2em;
+  color: rgb(24, 123, 9);
+  font-size: 0.8em;
+  font-weight: 1000;
+  display: flex;
+}
+
+.text-divider:before {
+  content: "";
+  flex: 1;
+  width: 45%;
+  height: 0.8em;
+  border-bottom: 3px rgba(24, 123, 9, 0.5) dashed;
+  margin: 0 5%;
+}
+
+.text-divider:after {
+  content: "";
+  flex: 1;
+  width: 45%;
+  height: 0.8em;
+  border-bottom: 3px rgba(24, 123, 9, 0.5) dashed;
+  margin: 0 5%;
+}
+
+.container {
+  padding: 0 10%;
 }

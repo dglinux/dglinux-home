@@ -1,0 +1,7 @@
+---
+layout: post
+title: 你好，世界！
+category: hello 
+---
+
+![满月](/assets/full-moon.jpg)
