@@ -14,6 +14,23 @@ body {
   margin: 0;
 }
 
+a, .link {
+  font-weight: 1000;
+  color: rgb(24, 123, 9);
+  border-bottom: 1px rgb(24, 123, 9) dotted;
+  text-decoration: none;
+}
+
+a:hover, .link:hover {
+  color: rgb(14, 63, 7);
+  broder-bottom: 2px rgb(14, 63, 7) dotted;
+}
+
+a:active, .link:active {
+  background-color: rgb(14, 63, 7);
+  color: white;
+}
+
 .top-bar {
   width: 100vw;
   height: 5px;

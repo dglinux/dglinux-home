@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>莞工 GNU/Linux 协会</title>
+    <script src="/js/main.js" async></script>
+    <script src="/js/logoCanvas.js" async></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap" rel="stylesheet" async>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet" async>
+    <link rel="stylesheet" href="/css/styles.css" async>
+    <link rel="stylesheet" href="/css/styles-mobile.css" media="screen and (max-width: 599px)" async>
+    <link rel="stylesheet" href="/css/canvas-styles.css" async>
+    <script src="https://kit.fontawesome.com/464686b8bf.js" crossorigin="anonymous" async></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="full-screen">
+      {% include introduction-bar.html %}
+
+      {% for post in site.posts %}
+      <div class="article">
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>a
+      </div>
+      {% endfor %}
+      <div class="divider"></div>
+
+    {% include footer.html %}
+    </div> 
+    <script src="js/imageDangler.js" async></script>
+  </body>
+</html>
