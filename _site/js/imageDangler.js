@@ -1,6 +1,5 @@
 function framifyImages() {
   let images = document.querySelectorAll("img");
-  console.log("framify called for no apparent reason, apparently");
   for (let i = 0; i < images.length; i++) {
     const img = images[i];
     if (img.getAttribute("exempt")) {
@@ -23,6 +22,17 @@ function dangleImages() {
     const img = images[i];
     const positiveness = Math.random() > 0.5 ? 1 : -1;
     img.style.transform = "rotate(" + (positiveness * Math.random()) + "deg)";
+  }
+}
+
+window.onscroll = function(e) {
+  const elem = document.querySelector(".introduction-bar");
+  if (window.scrollY != 0) {
+    if (!elem.classList.contains("introduction-bar__shadow")) {
+      elem.classList.add("introduction-bar__shadow");
+    }
+  } else {
+    elem.classList.remove("introduction-bar__shadow");
   }
 }
 
