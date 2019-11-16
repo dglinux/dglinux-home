@@ -1,0 +1,459 @@
+<html>
+  <head>
+    <title>莞工 GNU/Linux 协会</title>
+    <script src="/haha/js/main.js" async></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap" rel="stylesheet" async>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet" async>
+    <link rel="stylesheet" href="/haha/css/styles.css" async>
+    <link rel="stylesheet" href="/haha/css/styles-mobile.css" media="screen and (max-width: 599px)" async>
+    <link rel="stylesheet" href="/haha/css/canvas-styles.css" async>
+    <script src="https://kit.fontawesome.com/464686b8bf.js" crossorigin="anonymous" async></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="full-screen">
+      <div id="introduction-bar" class="introduction-bar introduction-bar__sticky">
+  <a class="introduction-item" href="/haha/">
+    主页
+  </a>
+  <a class="introduction-item " href="/haha/introduction">
+    协会介绍
+  </a>
+  <a class="introduction-item  introduction-item__active " href="/haha/blog">
+    博客 
+  </a>
+  <a class="introduction-item " href="/haha/tools">
+    工具
+  </a>
+  <a class="introduction-item " href="/haha/about">
+    关于
+  </a>
+</div>
+
+
+      <div class="article">
+        <h1>很多代码 —— 警告！</h1>
+        <div class="post-info">
+          <div><i class="fas fa-clock"></i> 发布日期: 2019-11-16 00:00:00 +0800</div>
+          <div><i class="fas fa-archive"></i> 分类:
+            
+            <span class="tag">lots</span>
+            
+            <span class="tag">of</span>
+            
+            <span class="tag">code</span>
+            
+          </div>
+          <div><i class="fas fa-link"></i> 永久链接:
+            <a href="http://0.0.0.0:4000//lots/of/code/2019/11/16/large-portion-of-code.html">http://0.0.0.0:4000//lots/of/code/2019/11/16/large-portion-of-code.html</a>
+          </div>
+        </div>
+      </div>
+      <div class="snip"></div>
+      <div class="article article__centerify">
+        <p>这个东西会有很多代码。为了让简述好看一点，我们会加一些额外的字给你。Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">;; -*- mode: emacs-lisp -*-</span>
+<span class="c1">;; This file is loaded by Spacemacs at startup.</span>
+<span class="c1">;; It must be stored in your home directory.</span>
+
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">dotspacemacs/layers</span> <span class="p">()</span>
+  <span class="s">"Configuration Layers declaration.
+You should not put any user code in this function besides modifying the variable
+values."</span>
+  <span class="p">(</span><span class="nv">setq-default</span>
+   <span class="c1">;; Base distribution to use. This is a layer contained in the directory</span>
+   <span class="c1">;; `+distribution'. For now available distributions are `spacemacs-base'</span>
+   <span class="c1">;; or `spacemacs'. (default 'spacemacs)</span>
+   <span class="nv">dotspacemacs-distribution</span> <span class="ss">'spacemacs</span>
+   <span class="c1">;; Lazy installation of layers (i.e. layers are installed only when a file</span>
+   <span class="c1">;; with a supported type is opened). Possible values are `all', `unused'</span>
+   <span class="c1">;; and `nil'. `unused' will lazy install only unused layers (i.e. layers</span>
+   <span class="c1">;; not listed in variable `dotspacemacs-configuration-layers'), `all' will</span>
+   <span class="c1">;; lazy install any layer that support lazy installation even the layers</span>
+   <span class="c1">;; listed in `dotspacemacs-configuration-layers'. `nil' disable the lazy</span>
+   <span class="c1">;; installation feature and you have to explicitly list a layer in the</span>
+   <span class="c1">;; variable `dotspacemacs-configuration-layers' to install it.</span>
+   <span class="c1">;; (default 'unused)</span>
+   <span class="nv">dotspacemacs-enable-lazy-installation</span> <span class="ss">'unused</span>
+   <span class="c1">;; If non-nil then Spacemacs will ask for confirmation before installing</span>
+   <span class="c1">;; a layer lazily. (default t)</span>
+   <span class="nv">dotspacemacs-ask-for-lazy-installation</span> <span class="no">t</span>
+   <span class="c1">;; If non-nil layers with lazy install support are lazy installed.</span>
+   <span class="c1">;; List of additional paths where to look for configuration layers.</span>
+   <span class="c1">;; Paths must have a trailing slash (i.e. `~/.mycontribs/')</span>
+   <span class="nv">dotspacemacs-configuration-layer-path</span> <span class="o">'</span><span class="p">()</span>
+   <span class="c1">;; List of configuration layers to load.</span>
+   <span class="nv">dotspacemacs-configuration-layers</span>
+   <span class="o">'</span><span class="p">(</span>
+		 <span class="nv">yaml</span>
+		 <span class="nv">markdown</span>
+		 <span class="nv">themes-megapack</span>
+		 <span class="nv">javascript</span>
+		 <span class="nv">html</span>
+     <span class="nv">python</span>
+     <span class="c1">;; ----------------------------------------------------------------</span>
+     <span class="c1">;; Example of useful layers you may want to use right away.</span>
+     <span class="c1">;; Uncomment some layer names and press &lt;SPC f e R&gt; (Vim style) or</span>
+     <span class="c1">;; &lt;M-m f e R&gt; (Emacs style) to install them.</span>
+     <span class="c1">;; ----------------------------------------------------------------</span>
+     <span class="nv">helm</span>
+     <span class="c1">;; auto-completion</span>
+     <span class="c1">;; better-defaults</span>
+     <span class="nv">emacs-lisp</span>
+     <span class="nv">git</span>
+		 <span class="nv">neotree</span>
+     <span class="c1">;; markdown</span>
+     <span class="c1">;; org</span>
+     <span class="c1">;; (shell :variables</span>
+     <span class="c1">;;        shell-default-height 30</span>
+     <span class="c1">;;        shell-default-position 'bottom)</span>
+     <span class="c1">;; spell-checking</span>
+     <span class="c1">;; syntax-checking</span>
+     <span class="c1">;; version-control</span>
+     <span class="p">)</span>
+   <span class="c1">;; List of additional packages that will be installed without being</span>
+   <span class="c1">;; wrapped in a layer. If you need some configuration for these</span>
+   <span class="c1">;; packages, then consider creating a layer. You can also put the</span>
+   <span class="c1">;; configuration in `dotspacemacs/user-config'.</span>
+   <span class="nv">dotspacemacs-additional-packages</span> <span class="o">'</span><span class="p">(</span>
+																			<span class="nv">editorconfig</span>
+																			<span class="p">)</span>
+   <span class="c1">;; A list of packages that cannot be updated.</span>
+   <span class="nv">dotspacemacs-frozen-packages</span> <span class="o">'</span><span class="p">()</span>
+   <span class="c1">;; A list of packages that will not be installed and loaded.</span>
+   <span class="nv">dotspacemacs-excluded-packages</span> <span class="o">'</span><span class="p">()</span>
+   <span class="c1">;; Defines the behaviour of Spacemacs when installing packages.</span>
+   <span class="c1">;; Possible values are `used-only', `used-but-keep-unused' and `all'.</span>
+   <span class="c1">;; `used-only' installs only explicitly used packages and uninstall any</span>
+   <span class="c1">;; unused packages as well as their unused dependencies.</span>
+   <span class="c1">;; `used-but-keep-unused' installs only the used packages but won't uninstall</span>
+   <span class="c1">;; them if they become unused. `all' installs *all* packages supported by</span>
+   <span class="c1">;; Spacemacs and never uninstall them. (default is `used-only')</span>
+   <span class="nv">dotspacemacs-install-packages</span> <span class="ss">'used-only</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">dotspacemacs/init</span> <span class="p">()</span>
+  <span class="s">"Initialization function.
+This function is called at the very startup of Spacemacs initialization
+before layers configuration.
+You should not put any user code in there besides modifying the variable
+values."</span>
+  <span class="c1">;; This setq-default sexp is an exhaustive list of all the supported</span>
+  <span class="c1">;; spacemacs settings.</span>
+  <span class="p">(</span><span class="nv">setq-default</span>
+   <span class="c1">;; If non nil ELPA repositories are contacted via HTTPS whenever it's</span>
+   <span class="c1">;; possible. Set it to nil if you have no way to use HTTPS in your</span>
+   <span class="c1">;; environment, otherwise it is strongly recommended to let it set to t.</span>
+   <span class="c1">;; This variable has no effect if Emacs is launched with the parameter</span>
+   <span class="c1">;; `--insecure' which forces the value of this variable to nil.</span>
+   <span class="c1">;; (default t)</span>
+   <span class="nv">dotspacemacs-elpa-https</span> <span class="no">t</span>
+   <span class="c1">;; Maximum allowed time in seconds to contact an ELPA repository.</span>
+   <span class="nv">dotspacemacs-elpa-timeout</span> <span class="mi">5</span>
+   <span class="c1">;; If non nil then spacemacs will check for updates at startup</span>
+   <span class="c1">;; when the current branch is not `develop'. Note that checking for</span>
+   <span class="c1">;; new versions works via git commands, thus it calls GitHub services</span>
+   <span class="c1">;; whenever you start Emacs. (default nil)</span>
+   <span class="nv">dotspacemacs-check-for-update</span> <span class="no">nil</span>
+   <span class="c1">;; If non-nil, a form that evaluates to a package directory. For example, to</span>
+   <span class="c1">;; use different package directories for different Emacs versions, set this</span>
+   <span class="c1">;; to `emacs-version'.</span>
+   <span class="nv">dotspacemacs-elpa-subdirectory</span> <span class="no">nil</span>
+   <span class="c1">;; One of `vim', `emacs' or `hybrid'.</span>
+   <span class="c1">;; `hybrid' is like `vim' except that `insert state' is replaced by the</span>
+   <span class="c1">;; `hybrid state' with `emacs' key bindings. The value can also be a list</span>
+   <span class="c1">;; with `:variables' keyword (similar to layers). Check the editing styles</span>
+   <span class="c1">;; section of the documentation for details on available variables.</span>
+   <span class="c1">;; (default 'vim)</span>
+   <span class="nv">dotspacemacs-editing-style</span> <span class="ss">'vim</span>
+   <span class="c1">;; If non nil output loading progress in `*Messages*' buffer. (default nil)</span>
+   <span class="nv">dotspacemacs-verbose-loading</span> <span class="no">nil</span>
+   <span class="c1">;; Specify the startup banner. Default value is `official', it displays</span>
+   <span class="c1">;; the official spacemacs logo. An integer value is the index of text</span>
+   <span class="c1">;; banner, `random' chooses a random text banner in `core/banners'</span>
+   <span class="c1">;; directory. A string value must be a path to an image format supported</span>
+   <span class="c1">;; by your Emacs build.</span>
+   <span class="c1">;; If the value is nil then no banner is displayed. (default 'official)</span>
+   <span class="nv">dotspacemacs-startup-banner</span> <span class="ss">'official</span>
+   <span class="c1">;; List of items to show in startup buffer or an association list of</span>
+   <span class="c1">;; the form `(list-type . list-size)`. If nil then it is disabled.</span>
+   <span class="c1">;; Possible values for list-type are:</span>
+   <span class="c1">;; `recents' `bookmarks' `projects' `agenda' `todos'."</span>
+   <span class="c1">;; List sizes may be nil, in which case</span>
+   <span class="c1">;; `spacemacs-buffer-startup-lists-length' takes effect.</span>
+   <span class="nv">dotspacemacs-startup-lists</span> <span class="o">'</span><span class="p">((</span><span class="nv">recents</span> <span class="o">.</span> <span class="mi">5</span><span class="p">)</span>
+                                <span class="p">(</span><span class="nv">projects</span> <span class="o">.</span> <span class="mi">7</span><span class="p">))</span>
+   <span class="c1">;; True if the home buffer should respond to resize events.</span>
+   <span class="nv">dotspacemacs-startup-buffer-responsive</span> <span class="no">t</span>
+   <span class="c1">;; Default major mode of the scratch buffer (default `text-mode')</span>
+   <span class="nv">dotspacemacs-scratch-mode</span> <span class="ss">'text-mode</span>
+   <span class="c1">;; List of themes, the first of the list is loaded when spacemacs starts.</span>
+   <span class="c1">;; Press &lt;SPC&gt; T n to cycle to the next theme in the list (works great</span>
+   <span class="c1">;; with 2 themes variants, one dark and one light)</span>
+   <span class="nv">dotspacemacs-themes</span> <span class="o">'</span><span class="p">(</span><span class="nv">apropospriate-light</span>
+												 <span class="nv">apropospriate-dark</span><span class="p">)</span>
+   <span class="c1">;; If non nil the cursor color matches the state color in GUI Emacs.</span>
+   <span class="nv">dotspacemacs-colorize-cursor-according-to-state</span> <span class="no">t</span>
+   <span class="c1">;; Default font, or prioritized list of fonts. `powerline-scale' allows to</span>
+   <span class="c1">;; quickly tweak the mode-line size to make separators look not too crappy.</span>
+   <span class="nv">dotspacemacs-default-font</span> <span class="o">'</span><span class="p">(</span><span class="s">"Iosevka"</span>
+                               <span class="ss">:size</span> <span class="mi">12</span>
+                               <span class="ss">:weight</span> <span class="nv">normal</span>
+                               <span class="ss">:width</span> <span class="nv">normal</span>
+                               <span class="ss">:powerline-scale</span> <span class="mf">1.2</span><span class="p">)</span>
+   <span class="c1">;; The leader key</span>
+   <span class="nv">dotspacemacs-leader-key</span> <span class="s">"SPC"</span>
+   <span class="c1">;; The key used for Emacs commands (M-x) (after pressing on the leader key).</span>
+   <span class="c1">;; (default "SPC")</span>
+   <span class="nv">dotspacemacs-emacs-command-key</span> <span class="s">"SPC"</span>
+   <span class="c1">;; The key used for Vim Ex commands (default ":")</span>
+   <span class="nv">dotspacemacs-ex-command-key</span> <span class="s">":"</span>
+   <span class="c1">;; The leader key accessible in `emacs state' and `insert state'</span>
+   <span class="c1">;; (default "M-m")</span>
+   <span class="nv">dotspacemacs-emacs-leader-key</span> <span class="s">"M-m"</span>
+   <span class="c1">;; Major mode leader key is a shortcut key which is the equivalent of</span>
+   <span class="c1">;; pressing `&lt;leader&gt; m`. Set it to `nil` to disable it. (default ",")</span>
+   <span class="nv">dotspacemacs-major-mode-leader-key</span> <span class="s">","</span>
+   <span class="c1">;; Major mode leader key accessible in `emacs state' and `insert state'.</span>
+   <span class="c1">;; (default "C-M-m")</span>
+   <span class="nv">dotspacemacs-major-mode-emacs-leader-key</span> <span class="s">"C-M-m"</span>
+   <span class="c1">;; These variables control whether separate commands are bound in the GUI to</span>
+   <span class="c1">;; the key pairs C-i, TAB and C-m, RET.</span>
+   <span class="c1">;; Setting it to a non-nil value, allows for separate commands under &lt;C-i&gt;</span>
+   <span class="c1">;; and TAB or &lt;C-m&gt; and RET.</span>
+   <span class="c1">;; In the terminal, these pairs are generally indistinguishable, so this only</span>
+   <span class="c1">;; works in the GUI. (default nil)</span>
+   <span class="nv">dotspacemacs-distinguish-gui-tab</span> <span class="no">nil</span>
+   <span class="c1">;; If non nil `Y' is remapped to `y$' in Evil states. (default nil)</span>
+   <span class="nv">dotspacemacs-remap-Y-to-y$</span> <span class="no">nil</span>
+   <span class="c1">;; If non-nil, the shift mappings `&lt;' and `&gt;' retain visual state if used</span>
+   <span class="c1">;; there. (default t)</span>
+   <span class="nv">dotspacemacs-retain-visual-state-on-shift</span> <span class="no">t</span>
+   <span class="c1">;; If non-nil, J and K move lines up and down when in visual mode.</span>
+   <span class="c1">;; (default nil)</span>
+   <span class="nv">dotspacemacs-visual-line-move-text</span> <span class="no">nil</span>
+   <span class="c1">;; If non nil, inverse the meaning of `g' in `:substitute' Evil ex-command.</span>
+   <span class="c1">;; (default nil)</span>
+   <span class="nv">dotspacemacs-ex-substitute-global</span> <span class="no">nil</span>
+   <span class="c1">;; Name of the default layout (default "Default")</span>
+   <span class="nv">dotspacemacs-default-layout-name</span> <span class="s">"Default"</span>
+   <span class="c1">;; If non nil the default layout name is displayed in the mode-line.</span>
+   <span class="c1">;; (default nil)</span>
+   <span class="nv">dotspacemacs-display-default-layout</span> <span class="no">nil</span>
+   <span class="c1">;; If non nil then the last auto saved layouts are resume automatically upon</span>
+   <span class="c1">;; start. (default nil)</span>
+   <span class="nv">dotspacemacs-auto-resume-layouts</span> <span class="no">nil</span>
+   <span class="c1">;; Size (in MB) above which spacemacs will prompt to open the large file</span>
+   <span class="c1">;; literally to avoid performance issues. Opening a file literally means that</span>
+   <span class="c1">;; no major mode or minor modes are active. (default is 1)</span>
+   <span class="nv">dotspacemacs-large-file-size</span> <span class="mi">1</span>
+   <span class="c1">;; Location where to auto-save files. Possible values are `original' to</span>
+   <span class="c1">;; auto-save the file in-place, `cache' to auto-save the file to another</span>
+   <span class="c1">;; file stored in the cache directory and `nil' to disable auto-saving.</span>
+   <span class="c1">;; (default 'cache)</span>
+   <span class="nv">dotspacemacs-auto-save-file-location</span> <span class="ss">'cache</span>
+   <span class="c1">;; Maximum number of rollback slots to keep in the cache. (default 5)</span>
+   <span class="nv">dotspacemacs-max-rollback-slots</span> <span class="mi">5</span>
+   <span class="c1">;; If non nil, `helm' will try to minimize the space it uses. (default nil)</span>
+   <span class="nv">dotspacemacs-helm-resize</span> <span class="no">nil</span>
+   <span class="c1">;; if non nil, the helm header is hidden when there is only one source.</span>
+   <span class="c1">;; (default nil)</span>
+   <span class="nv">dotspacemacs-helm-no-header</span> <span class="no">nil</span>
+   <span class="c1">;; define the position to display `helm', options are `bottom', `top',</span>
+   <span class="c1">;; `left', or `right'. (default 'bottom)</span>
+   <span class="nv">dotspacemacs-helm-position</span> <span class="ss">'bottom</span>
+   <span class="c1">;; Controls fuzzy matching in helm. If set to `always', force fuzzy matching</span>
+   <span class="c1">;; in all non-asynchronous sources. If set to `source', preserve individual</span>
+   <span class="c1">;; source settings. Else, disable fuzzy matching in all sources.</span>
+   <span class="c1">;; (default 'always)</span>
+   <span class="nv">dotspacemacs-helm-use-fuzzy</span> <span class="ss">'always</span>
+   <span class="c1">;; If non nil the paste micro-state is enabled. When enabled pressing `p`</span>
+   <span class="c1">;; several times cycle between the kill ring content. (default nil)</span>
+   <span class="nv">dotspacemacs-enable-paste-transient-state</span> <span class="no">nil</span>
+   <span class="c1">;; Which-key delay in seconds. The which-key buffer is the popup listing</span>
+   <span class="c1">;; the commands bound to the current keystroke sequence. (default 0.4)</span>
+   <span class="nv">dotspacemacs-which-key-delay</span> <span class="mf">0.4</span>
+   <span class="c1">;; Which-key frame position. Possible values are `right', `bottom' and</span>
+   <span class="c1">;; `right-then-bottom'. right-then-bottom tries to display the frame to the</span>
+   <span class="c1">;; right; if there is insufficient space it displays it at the bottom.</span>
+   <span class="c1">;; (default 'bottom)</span>
+   <span class="nv">dotspacemacs-which-key-position</span> <span class="ss">'bottom</span>
+   <span class="c1">;; If non nil a progress bar is displayed when spacemacs is loading. This</span>
+   <span class="c1">;; may increase the boot time on some systems and emacs builds, set it to</span>
+   <span class="c1">;; nil to boost the loading time. (default t)</span>
+   <span class="nv">dotspacemacs-loading-progress-bar</span> <span class="no">t</span>
+   <span class="c1">;; If non nil the frame is fullscreen when Emacs starts up. (default nil)</span>
+   <span class="c1">;; (Emacs 24.4+ only)</span>
+   <span class="nv">dotspacemacs-fullscreen-at-startup</span> <span class="no">nil</span>
+   <span class="c1">;; If non nil `spacemacs/toggle-fullscreen' will not use native fullscreen.</span>
+   <span class="c1">;; Use to disable fullscreen animations in OSX. (default nil)</span>
+   <span class="nv">dotspacemacs-fullscreen-use-non-native</span> <span class="no">nil</span>
+   <span class="c1">;; If non nil the frame is maximized when Emacs starts up.</span>
+   <span class="c1">;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.</span>
+   <span class="c1">;; (default nil) (Emacs 24.4+ only)</span>
+   <span class="nv">dotspacemacs-maximized-at-startup</span> <span class="no">nil</span>
+   <span class="c1">;; A value from the range (0..100), in increasing opacity, which describes</span>
+   <span class="c1">;; the transparency level of a frame when it's active or selected.</span>
+   <span class="c1">;; Transparency can be toggled through `toggle-transparency'. (default 90)</span>
+   <span class="nv">dotspacemacs-active-transparency</span> <span class="mi">90</span>
+   <span class="c1">;; A value from the range (0..100), in increasing opacity, which describes</span>
+   <span class="c1">;; the transparency level of a frame when it's inactive or deselected.</span>
+   <span class="c1">;; Transparency can be toggled through `toggle-transparency'. (default 90)</span>
+   <span class="nv">dotspacemacs-inactive-transparency</span> <span class="mi">90</span>
+   <span class="c1">;; If non nil show the titles of transient states. (default t)</span>
+   <span class="nv">dotspacemacs-show-transient-state-title</span> <span class="no">t</span>
+   <span class="c1">;; If non nil show the color guide hint for transient state keys. (default t)</span>
+   <span class="nv">dotspacemacs-show-transient-state-color-guide</span> <span class="no">t</span>
+   <span class="c1">;; If non nil unicode symbols are displayed in the mode line. (default t)</span>
+   <span class="nv">dotspacemacs-mode-line-unicode-symbols</span> <span class="no">t</span>
+   <span class="c1">;; If non nil smooth scrolling (native-scrolling) is enabled. Smooth</span>
+   <span class="c1">;; scrolling overrides the default behavior of Emacs which recenters point</span>
+   <span class="c1">;; when it reaches the top or bottom of the screen. (default t)</span>
+   <span class="nv">dotspacemacs-smooth-scrolling</span> <span class="no">t</span>
+   <span class="c1">;; Control line numbers activation.</span>
+   <span class="c1">;; If set to `t' or `relative' line numbers are turned on in all `prog-mode' and</span>
+   <span class="c1">;; `text-mode' derivatives. If set to `relative', line numbers are relative.</span>
+   <span class="c1">;; This variable can also be set to a property list for finer control:</span>
+   <span class="c1">;; '(:relative nil</span>
+   <span class="c1">;;   :disabled-for-modes dired-mode</span>
+   <span class="c1">;;                       doc-view-mode</span>
+   <span class="c1">;;                       markdown-mode</span>
+   <span class="c1">;;                       org-mode</span>
+   <span class="c1">;;                       pdf-view-mode</span>
+   <span class="c1">;;                       text-mode</span>
+   <span class="c1">;;   :size-limit-kb 1000)</span>
+   <span class="c1">;; (default nil)</span>
+   <span class="nv">dotspacemacs-line-numbers</span> <span class="no">t</span>
+   <span class="c1">;; Code folding method. Possible values are `evil' and `origami'.</span>
+   <span class="c1">;; (default 'evil)</span>
+   <span class="nv">dotspacemacs-folding-method</span> <span class="ss">'evil</span>
+   <span class="c1">;; If non-nil smartparens-strict-mode will be enabled in programming modes.</span>
+   <span class="c1">;; (default nil)</span>
+   <span class="nv">dotspacemacs-smartparens-strict-mode</span> <span class="no">nil</span>
+   <span class="c1">;; If non-nil pressing the closing parenthesis `)' key in insert mode passes</span>
+   <span class="c1">;; over any automatically added closing parenthesis, bracket, quote, etc…</span>
+   <span class="c1">;; This can be temporary disabled by pressing `C-q' before `)'. (default nil)</span>
+   <span class="nv">dotspacemacs-smart-closing-parenthesis</span> <span class="no">nil</span>
+   <span class="c1">;; Select a scope to highlight delimiters. Possible values are `any',</span>
+   <span class="c1">;; `current', `all' or `nil'. Default is `all' (highlight any scope and</span>
+   <span class="c1">;; emphasis the current one). (default 'all)</span>
+   <span class="nv">dotspacemacs-highlight-delimiters</span> <span class="ss">'all</span>
+   <span class="c1">;; If non nil, advise quit functions to keep server open when quitting.</span>
+   <span class="c1">;; (default nil)</span>
+   <span class="nv">dotspacemacs-persistent-server</span> <span class="no">nil</span>
+   <span class="c1">;; List of search tool executable names. Spacemacs uses the first installed</span>
+   <span class="c1">;; tool of the list. Supported tools are `ag', `pt', `ack' and `grep'.</span>
+   <span class="c1">;; (default '("ag" "pt" "ack" "grep"))</span>
+   <span class="nv">dotspacemacs-search-tools</span> <span class="o">'</span><span class="p">(</span><span class="s">"ag"</span> <span class="s">"pt"</span> <span class="s">"ack"</span> <span class="s">"grep"</span><span class="p">)</span>
+   <span class="c1">;; The default package repository used if no explicit repository has been</span>
+   <span class="c1">;; specified with an installed package.</span>
+   <span class="c1">;; Not used for now. (default nil)</span>
+   <span class="nv">dotspacemacs-default-package-repository</span> <span class="no">nil</span>
+   <span class="c1">;; Delete whitespace while saving buffer. Possible values are `all'</span>
+   <span class="c1">;; to aggressively delete empty line and long sequences of whitespace,</span>
+   <span class="c1">;; `trailing' to delete only the whitespace at end of lines, `changed'to</span>
+   <span class="c1">;; delete only whitespace for changed lines or `nil' to disable cleanup.</span>
+   <span class="c1">;; (default nil)</span>
+   <span class="nv">dotspacemacs-whitespace-cleanup</span> <span class="no">nil</span>
+   <span class="p">))</span>
+
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">dotspacemacs/user-init</span> <span class="p">()</span>
+  <span class="s">"Initialization function for user code.
+It is called immediately after `dotspacemacs/init', before layer configuration
+executes.
+ This function is mostly useful for variables that need to be set
+before packages are loaded. If you are unsure, you should try in setting them in
+`dotspacemacs/user-config' first."</span>
+  <span class="p">)</span>
+
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">dotspacemacs/user-config</span> <span class="p">()</span>
+  <span class="s">"Configuration function for user code.
+This function is called at the very end of Spacemacs initialization after
+layers configuration.
+This is the place where most of your configurations should be done. Unless it is
+explicitly specified that a variable should be set before a package is loaded,
+you should place your code here."</span>
+  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">'text-mode-hook</span> <span class="ss">'spacemacs/toggle-visual-line-navigation-on</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">'text-mode-hook</span> <span class="ss">'spacemacs/toggle-truncate-lines-on</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">setq-default</span> <span class="nv">line-spacing</span> <span class="mi">3</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">setq-default</span> <span class="nv">truncate-lines</span> <span class="no">t</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">setq-default</span> <span class="nv">helm-boiring-buffer-regexp-list</span> <span class="nv">spacemacs-useless-buffers-regexp</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">setq-default</span> <span class="nv">global-visual-mode</span> <span class="no">t</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">setq-default</span> <span class="nv">indent-tabs-mode</span> <span class="no">t</span><span class="p">)</span>
+	<span class="p">(</span><span class="nv">setq-default</span> <span class="nv">c-default-style</span> <span class="s">"java"</span><span class="p">)</span>
+	<span class="p">(</span><span class="nv">editorconfig-mode</span> <span class="mi">1</span><span class="p">)</span>
+	<span class="p">(</span><span class="k">setq</span> <span class="nv">initial-frame-alist</span> <span class="o">'</span><span class="p">((</span><span class="nv">top</span> <span class="o">.</span> <span class="mi">30</span><span class="p">)</span> <span class="p">(</span><span class="nv">left</span> <span class="o">.</span> <span class="mi">30</span><span class="p">)</span> <span class="p">(</span><span class="nv">width</span> <span class="o">.</span> <span class="mi">96</span><span class="p">)</span> <span class="p">(</span><span class="nv">height</span> <span class="o">.</span> <span class="mi">53</span><span class="p">)))</span>
+  <span class="p">)</span>
+
+<span class="c1">;; Do not write anything past this comment. This is where Emacs will</span>
+<span class="c1">;; auto-generate custom variable definitions.</span>
+<span class="p">(</span><span class="nv">custom-set-variables</span>
+ <span class="c1">;; custom-set-variables was added by Custom.</span>
+ <span class="c1">;; If you edit it by hand, you could mess it up, so be careful.</span>
+ <span class="c1">;; Your init file should contain only one such instance.</span>
+ <span class="c1">;; If there is more than one, they won't work right.</span>
+ <span class="o">'</span><span class="p">(</span><span class="nv">custom-safe-themes</span>
+	 <span class="p">(</span><span class="k">quote</span>
+		<span class="p">(</span><span class="s">"5a0eee1070a4fc64268f008a4c7abfda32d912118e080e18c3c865ef864d1bea"</span> <span class="s">"c3e6b52caa77cb09c049d3c973798bc64b5c43cc437d449eacf35b3e776bf85c"</span> <span class="s">"bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476"</span> <span class="s">"fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088"</span> <span class="nv">default</span><span class="p">)))</span>
+ <span class="o">'</span><span class="p">(</span><span class="nv">evil-want-Y-yank-to-eol</span> <span class="no">nil</span><span class="p">)</span>
+ <span class="o">'</span><span class="p">(</span><span class="nv">package-selected-packages</span>
+	 <span class="p">(</span><span class="k">quote</span>
+		<span class="p">(</span><span class="nv">yaml-mode</span> <span class="nv">mmm-mode</span> <span class="nv">markdown-toc</span> <span class="nv">markdown-mode</span> <span class="nv">gh-md</span> <span class="nv">zenburn-theme</span> <span class="nv">zen-and-art-theme</span> <span class="nv">white-sand-theme</span> <span class="nv">underwater-theme</span> <span class="nv">ujelly-theme</span> <span class="nv">twilight-theme</span> <span class="nv">twilight-bright-theme</span> <span class="nv">twilight-anti-bright-theme</span> <span class="nv">toxi-theme</span> <span class="nv">tao-theme</span> <span class="nv">tangotango-theme</span> <span class="nv">tango-plus-theme</span> <span class="nv">tango-2-theme</span> <span class="nv">sunny-day-theme</span> <span class="nv">sublime-themes</span> <span class="nv">subatomic256-theme</span> <span class="nv">subatomic-theme</span> <span class="nv">spacegray-theme</span> <span class="nv">soothe-theme</span> <span class="nv">solarized-theme</span> <span class="nv">soft-stone-theme</span> <span class="nv">soft-morning-theme</span> <span class="nv">soft-charcoal-theme</span> <span class="nv">smyx-theme</span> <span class="nv">seti-theme</span> <span class="nv">reverse-theme</span> <span class="nv">rebecca-theme</span> <span class="nv">railscasts-theme</span> <span class="nv">purple-haze-theme</span> <span class="nv">professional-theme</span> <span class="nv">planet-theme</span> <span class="nv">phoenix-dark-pink-theme</span> <span class="nv">phoenix-dark-mono-theme</span> <span class="nv">organic-green-theme</span> <span class="nv">omtose-phellack-theme</span> <span class="nv">oldlace-theme</span> <span class="nv">occidental-theme</span> <span class="nv">obsidian-theme</span> <span class="nv">noctilux-theme</span> <span class="nv">naquadah-theme</span> <span class="nv">mustang-theme</span> <span class="nv">monokai-theme</span> <span class="nv">monochrome-theme</span> <span class="nv">molokai-theme</span> <span class="nv">moe-theme</span> <span class="nv">minimal-theme</span> <span class="nv">material-theme</span> <span class="nv">majapahit-theme</span> <span class="nv">madhat2r-theme</span> <span class="nv">lush-theme</span> <span class="nv">light-soap-theme</span> <span class="nv">jbeans-theme</span> <span class="nv">jazz-theme</span> <span class="nv">ir-black-theme</span> <span class="nv">inkpot-theme</span> <span class="nv">heroku-theme</span> <span class="nv">hemisu-theme</span> <span class="nv">hc-zenburn-theme</span> <span class="nv">gruvbox-theme</span> <span class="nv">gruber-darker-theme</span> <span class="nv">grandshell-theme</span> <span class="nv">gotham-theme</span> <span class="nv">gandalf-theme</span> <span class="nv">flatui-theme</span> <span class="nv">flatland-theme</span> <span class="nv">farmhouse-theme</span> <span class="nv">exotica-theme</span> <span class="nv">espresso-theme</span> <span class="nv">dracula-theme</span> <span class="nv">django-theme</span> <span class="nv">darktooth-theme</span> <span class="nv">autothemer</span> <span class="nv">darkokai-theme</span> <span class="nv">darkmine-theme</span> <span class="nv">darkburn-theme</span> <span class="nv">dakrone-theme</span> <span class="nv">cyberpunk-theme</span> <span class="nv">color-theme-sanityinc-tomorrow</span> <span class="nv">color-theme-sanityinc-solarized</span> <span class="nv">clues-theme</span> <span class="nv">cherry-blossom-theme</span> <span class="nv">busybee-theme</span> <span class="nv">bubbleberry-theme</span> <span class="nv">birds-of-paradise-plus-theme</span> <span class="nv">badwolf-theme</span> <span class="nv">apropospriate-theme</span> <span class="nv">anti-zenburn-theme</span> <span class="nv">ample-zen-theme</span> <span class="nv">ample-theme</span> <span class="nv">alect-themes</span> <span class="nv">afternoon-theme</span> <span class="nv">smeargle</span> <span class="nv">orgit</span> <span class="nv">magit-gitflow</span> <span class="nv">magit-popup</span> <span class="nv">helm-gitignore</span> <span class="nv">gitignore-mode</span> <span class="nv">gitconfig-mode</span> <span class="nv">gitattributes-mode</span> <span class="nv">git-timemachine</span> <span class="nv">git-messenger</span> <span class="nv">git-link</span> <span class="nv">evil-magit</span> <span class="nv">magit</span> <span class="nv">transient</span> <span class="nv">git-commit</span> <span class="nv">with-editor</span> <span class="nv">web-beautify</span> <span class="nv">livid-mode</span> <span class="nv">skewer-mode</span> <span class="nv">simple-httpd</span> <span class="nv">json-mode</span> <span class="nv">json-snatcher</span> <span class="nv">json-reformat</span> <span class="nv">js2-refactor</span> <span class="nv">yasnippet</span> <span class="nv">multiple-cursors</span> <span class="nv">js2-mode</span> <span class="nv">js-doc</span> <span class="nv">coffee-mode</span> <span class="nv">editorconfig</span> <span class="nv">web-mode</span> <span class="nv">tagedit</span> <span class="nv">slim-mode</span> <span class="nv">scss-mode</span> <span class="nv">sass-mode</span> <span class="nv">pug-mode</span> <span class="nv">helm-css-scss</span> <span class="nv">haml-mode</span> <span class="nv">emmet-mode</span> <span class="nv">yapfify</span> <span class="nv">pyvenv</span> <span class="nv">pytest</span> <span class="nv">pyenv-mode</span> <span class="nv">py-isort</span> <span class="nv">pip-requirements</span> <span class="nv">live-py-mode</span> <span class="nv">hy-mode</span> <span class="nv">dash-functional</span> <span class="nv">helm-pydoc</span> <span class="nv">cython-mode</span> <span class="nv">anaconda-mode</span> <span class="nv">pythonic</span> <span class="nv">ws-butler</span> <span class="nv">winum</span> <span class="nv">volatile-highlights</span> <span class="nv">vi-tilde-fringe</span> <span class="nv">uuidgen</span> <span class="nb">use-package</span> <span class="nv">toc-org</span> <span class="nv">spaceline</span> <span class="nv">powerline</span> <span class="nv">restart-emacs</span> <span class="nv">request</span> <span class="nv">rainbow-delimiters</span> <span class="nv">popwin</span> <span class="nv">persp-mode</span> <span class="nv">pcre2el</span> <span class="nv">paradox</span> <span class="nv">spinner</span> <span class="nv">org-bullets</span> <span class="nv">open-junk-file</span> <span class="nv">neotree</span> <span class="nv">move-text</span> <span class="nv">macrostep</span> <span class="nv">lorem-ipsum</span> <span class="nv">linum-relative</span> <span class="nv">link-hint</span> <span class="nv">indent-guide</span> <span class="nv">lv</span> <span class="nv">hungry-delete</span> <span class="nv">hl-todo</span> <span class="nv">highlight-parentheses</span> <span class="nv">highlight-numbers</span> <span class="nv">parent-mode</span> <span class="nv">highlight-indentation</span> <span class="nv">helm-themes</span> <span class="nv">helm-swoop</span> <span class="nv">helm-projectile</span> <span class="nv">projectile</span> <span class="nv">pkg-info</span> <span class="nv">epl</span> <span class="nv">helm-mode-manager</span> <span class="nv">helm-make</span> <span class="nv">helm-flx</span> <span class="nv">helm-descbinds</span> <span class="nv">helm-ag</span> <span class="nv">google-translate</span> <span class="nv">golden-ratio</span> <span class="nv">flx-ido</span> <span class="nv">flx</span> <span class="nv">fill-column-indicator</span> <span class="nv">fancy-battery</span> <span class="nv">eyebrowse</span> <span class="nv">expand-region</span> <span class="nv">exec-path-from-shell</span> <span class="nv">evil-visualstar</span> <span class="nv">evil-visual-mark-mode</span> <span class="nv">evil-tutor</span> <span class="nv">evil-surround</span> <span class="nv">evil-search-highlight-persist</span> <span class="nv">highlight</span> <span class="nv">evil-numbers</span> <span class="nv">evil-nerd-commenter</span> <span class="nv">evil-mc</span> <span class="nv">evil-matchit</span> <span class="nv">evil-lisp-state</span> <span class="nv">smartparens</span> <span class="nv">evil-indent-plus</span> <span class="nv">evil-iedit-state</span> <span class="nv">iedit</span> <span class="nv">evil-exchange</span> <span class="nv">evil-escape</span> <span class="nv">evil-ediff</span> <span class="nv">evil-args</span> <span class="nv">evil-anzu</span> <span class="nv">anzu</span> <span class="nv">evil</span> <span class="nv">goto-chg</span> <span class="nv">eval-sexp-fu</span> <span class="nv">elisp-slime-nav</span> <span class="nv">dumb-jump</span> <span class="nv">diminish</span> <span class="nv">define-word</span> <span class="nv">column-enforce-mode</span> <span class="nv">clean-aindent-mode</span> <span class="nv">bind-map</span> <span class="nv">bind-key</span> <span class="nv">auto-highlight-symbol</span> <span class="nv">auto-compile</span> <span class="nv">packed</span> <span class="nv">ace-link</span> <span class="nv">ace-jump-helm-line</span> <span class="nv">helm</span> <span class="nv">helm-core</span> <span class="nv">popup</span> <span class="nv">which-key</span> <span class="nv">undo-tree</span> <span class="nv">org-plus-contrib</span> <span class="nv">hydra</span> <span class="nv">evil-unimpaired</span> <span class="nv">async</span> <span class="nv">aggressive-indent</span> <span class="nv">adaptive-wrap</span> <span class="nv">ace-window</span><span class="p">))))</span>
+<span class="p">(</span><span class="nv">custom-set-faces</span>
+ <span class="c1">;; custom-set-faces was added by Custom.</span>
+ <span class="c1">;; If you edit it by hand, you could mess it up, so be careful.</span>
+ <span class="c1">;; Your init file should contain only one such instance.</span>
+ <span class="c1">;; If there is more than one, they won't work right.</span>
+ <span class="p">)</span>
+</code></pre></div></div>
+
+      </div>
+      <div class="divider"></div>
+
+    <div class="footer">
+  <div class="footer__left">
+    <div class="footer__title">对我们协会感兴趣了吗？<b>加入我们吧！</b></div>
+    <div class="card-group">
+      <div class="card">
+        <div class="card__title">
+          <i class="fab fa-telegram"></i>
+          Telegram
+        </div>
+        <div class="card__content">
+          <a href="https://t.me/dgutlug">t.me/dgutlug</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__title">
+          <i class="fab fa-qq"></i>
+          QQ 群组
+        </div>
+        <div class="card__content">
+          <span>261795035</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__title">
+          <i class="fas fa-home"></i>
+          协会主页
+        </div>
+        <div class="card__content">
+          <a href="https://linux.dgut.edu.cn">linux.dgut.edu.cn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__comment">
+      Copyleft 2019 dglinux. Some rights reserved. Theme by 42yeah.
+    </div>
+  </div>
+  <div class="footer__right">
+    <img style="margin-right: 1rem" src="/haha/assets/logo.png" alt="GNU/Linux 协会 LOGO!" exempt="true">
+  </div>
+</div>
+
+<script src="/haha/js/imageDangler.js" async></script>
+
+    </div>
+  </body>
+</html>

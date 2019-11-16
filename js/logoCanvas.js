@@ -1,3 +1,7 @@
+---
+title: logoCanvas
+---
+
 // === WINDOW HANDLERS === //
 window.onload = function() {
   const canvasElem = document.getElementById("logo-canvas");
@@ -22,7 +26,7 @@ class LogoCanvas {
     // === RENDER DATA === //
     const renderData = {};
     renderData.logo = new Image();
-    renderData.logo.src = "/assets/logo.png";
+    renderData.logo.src = "{{ site.baseurl }}/assets/logo.png";
     renderData.logo.size = this.unmap(renderData.logo.width, renderData.logo.height);
 
     const circles = [];

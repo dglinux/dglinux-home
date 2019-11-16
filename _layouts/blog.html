@@ -1,12 +1,12 @@
 <html>
   <head>
     <title>莞工 GNU/Linux 协会</title>
-    <script src="/js/main.js" async></script>
+    <script src="{{ site.baseurl }}/js/main.js" async></script>
     <link href="https://fonts.lug.ustc.edu.cn/css?family=Noto+Sans+SC&display=swap" rel="stylesheet" async>
     <link href="https://fonts.lug.ustc.edu.cn/css?family=Noto+Serif+SC&display=swap" rel="stylesheet" async>
-    <link rel="stylesheet" href="/css/styles.css" async>
-    <link rel="stylesheet" href="/css/styles-mobile.css" media="screen and (max-width: 599px)" async>
-    <link rel="stylesheet" href="/css/canvas-styles.css" async>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css" async>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles-mobile.css" media="screen and (max-width: 599px)" async>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/canvas-styles.css" async>
     <script src="https://kit.fontawesome.com/464686b8bf.js" crossorigin="anonymous" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -20,7 +20,7 @@
       <div class="snip"></div>
       {% endif %}
       <div class="article">
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
         <div class="post-info">
           <div><i class="fas fa-clock"></i> 发布日期: {{ post.date }}</div>
           <div><i class="fas fa-archive"></i> 分类:

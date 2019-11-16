@@ -1,17 +1,17 @@
 <div id="introduction-bar" class="introduction-bar introduction-bar__sticky">
-  <a class="introduction-item" href="/">
+  <a class="introduction-item" href="{{ site.baseurl }}/">
     主页
   </a>
-  <a class="introduction-item {% if page.type == 'introduction' %} introduction-item__active {% endif %}" href="/introduction">
+  <a class="introduction-item {% if page.type == 'introduction' %} introduction-item__active {% endif %}" href="{{ site.baseurl }}/introduction">
     协会介绍
   </a>
-  <a class="introduction-item {% if page.type == 'blog' or include.type == 'blog' %} introduction-item__active {% endif %}" href="/blog">
+  <a class="introduction-item {% if page.type == 'blog' or include.type == 'blog' %} introduction-item__active {% endif %}" href="{{ site.baseurl }}/blog">
     博客 
   </a>
-  <a class="introduction-item {% if page.type == 'tools' %} introduction-item__active {% endif %}" href="/tools">
+  <a class="introduction-item {% if page.type == 'tools' %} introduction-item__active {% endif %}" href="{{ site.baseurl }}/tools">
     工具
   </a>
-  <a class="introduction-item {% if page.type == 'about' %} introduction-item__active {% endif %}" href="/about">
+  <a class="introduction-item {% if page.type == 'about' %} introduction-item__active {% endif %}" href="{{ site.baseurl }}/about">
     关于
   </a>
 </div>
