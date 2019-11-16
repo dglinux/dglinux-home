@@ -46,7 +46,7 @@
             
           </div>
           <div><i class="fas fa-link"></i> 永久链接:
-            <a href="http://0.0.0.0:4000//lots/of/code/2019/11/16/large-portion-of-code.html">http://0.0.0.0:4000//lots/of/code/2019/11/16/large-portion-of-code.html</a>
+            <a href="http://0.0.0.0:4000/lots/of/code/2019/11/16/large-portion-of-code.html">http://0.0.0.0:4000/lots/of/code/2019/11/16/large-portion-of-code.html</a>
           </div>
         </div>
       </div>
@@ -202,211 +202,93 @@ values."</span>
                                <span class="ss">:weight</span> <span class="nv">normal</span>
                                <span class="ss">:width</span> <span class="nv">normal</span>
                                <span class="ss">:powerline-scale</span> <span class="mf">1.2</span><span class="p">)</span>
-   <span class="c1">;; The leader key</span>
-   <span class="nv">dotspacemacs-leader-key</span> <span class="s">"SPC"</span>
-   <span class="c1">;; The key used for Emacs commands (M-x) (after pressing on the leader key).</span>
-   <span class="c1">;; (default "SPC")</span>
-   <span class="nv">dotspacemacs-emacs-command-key</span> <span class="s">"SPC"</span>
-   <span class="c1">;; The key used for Vim Ex commands (default ":")</span>
-   <span class="nv">dotspacemacs-ex-command-key</span> <span class="s">":"</span>
-   <span class="c1">;; The leader key accessible in `emacs state' and `insert state'</span>
-   <span class="c1">;; (default "M-m")</span>
-   <span class="nv">dotspacemacs-emacs-leader-key</span> <span class="s">"M-m"</span>
-   <span class="c1">;; Major mode leader key is a shortcut key which is the equivalent of</span>
-   <span class="c1">;; pressing `&lt;leader&gt; m`. Set it to `nil` to disable it. (default ",")</span>
-   <span class="nv">dotspacemacs-major-mode-leader-key</span> <span class="s">","</span>
-   <span class="c1">;; Major mode leader key accessible in `emacs state' and `insert state'.</span>
-   <span class="c1">;; (default "C-M-m")</span>
-   <span class="nv">dotspacemacs-major-mode-emacs-leader-key</span> <span class="s">"C-M-m"</span>
-   <span class="c1">;; These variables control whether separate commands are bound in the GUI to</span>
-   <span class="c1">;; the key pairs C-i, TAB and C-m, RET.</span>
-   <span class="c1">;; Setting it to a non-nil value, allows for separate commands under &lt;C-i&gt;</span>
-   <span class="c1">;; and TAB or &lt;C-m&gt; and RET.</span>
-   <span class="c1">;; In the terminal, these pairs are generally indistinguishable, so this only</span>
-   <span class="c1">;; works in the GUI. (default nil)</span>
-   <span class="nv">dotspacemacs-distinguish-gui-tab</span> <span class="no">nil</span>
-   <span class="c1">;; If non nil `Y' is remapped to `y$' in Evil states. (default nil)</span>
-   <span class="nv">dotspacemacs-remap-Y-to-y$</span> <span class="no">nil</span>
-   <span class="c1">;; If non-nil, the shift mappings `&lt;' and `&gt;' retain visual state if used</span>
-   <span class="c1">;; there. (default t)</span>
-   <span class="nv">dotspacemacs-retain-visual-state-on-shift</span> <span class="no">t</span>
-   <span class="c1">;; If non-nil, J and K move lines up and down when in visual mode.</span>
-   <span class="c1">;; (default nil)</span>
-   <span class="nv">dotspacemacs-visual-line-move-text</span> <span class="no">nil</span>
-   <span class="c1">;; If non nil, inverse the meaning of `g' in `:substitute' Evil ex-command.</span>
-   <span class="c1">;; (default nil)</span>
-   <span class="nv">dotspacemacs-ex-substitute-global</span> <span class="no">nil</span>
-   <span class="c1">;; Name of the default layout (default "Default")</span>
-   <span class="nv">dotspacemacs-default-layout-name</span> <span class="s">"Default"</span>
-   <span class="c1">;; If non nil the default layout name is displayed in the mode-line.</span>
-   <span class="c1">;; (default nil)</span>
-   <span class="nv">dotspacemacs-display-default-layout</span> <span class="no">nil</span>
-   <span class="c1">;; If non nil then the last auto saved layouts are resume automatically upon</span>
-   <span class="c1">;; start. (default nil)</span>
-   <span class="nv">dotspacemacs-auto-resume-layouts</span> <span class="no">nil</span>
-   <span class="c1">;; Size (in MB) above which spacemacs will prompt to open the large file</span>
-   <span class="c1">;; literally to avoid performance issues. Opening a file literally means that</span>
-   <span class="c1">;; no major mode or minor modes are active. (default is 1)</span>
-   <span class="nv">dotspacemacs-large-file-size</span> <span class="mi">1</span>
-   <span class="c1">;; Location where to auto-save files. Possible values are `original' to</span>
-   <span class="c1">;; auto-save the file in-place, `cache' to auto-save the file to another</span>
-   <span class="c1">;; file stored in the cache directory and `nil' to disable auto-saving.</span>
-   <span class="c1">;; (default 'cache)</span>
-   <span class="nv">dotspacemacs-auto-save-file-location</span> <span class="ss">'cache</span>
-   <span class="c1">;; Maximum number of rollback slots to keep in the cache. (default 5)</span>
-   <span class="nv">dotspacemacs-max-rollback-slots</span> <span class="mi">5</span>
-   <span class="c1">;; If non nil, `helm' will try to minimize the space it uses. (default nil)</span>
-   <span class="nv">dotspacemacs-helm-resize</span> <span class="no">nil</span>
-   <span class="c1">;; if non nil, the helm header is hidden when there is only one source.</span>
-   <span class="c1">;; (default nil)</span>
-   <span class="nv">dotspacemacs-helm-no-header</span> <span class="no">nil</span>
-   <span class="c1">;; define the position to display `helm', options are `bottom', `top',</span>
-   <span class="c1">;; `left', or `right'. (default 'bottom)</span>
-   <span class="nv">dotspacemacs-helm-position</span> <span class="ss">'bottom</span>
-   <span class="c1">;; Controls fuzzy matching in helm. If set to `always', force fuzzy matching</span>
-   <span class="c1">;; in all non-asynchronous sources. If set to `source', preserve individual</span>
-   <span class="c1">;; source settings. Else, disable fuzzy matching in all sources.</span>
-   <span class="c1">;; (default 'always)</span>
-   <span class="nv">dotspacemacs-helm-use-fuzzy</span> <span class="ss">'always</span>
-   <span class="c1">;; If non nil the paste micro-state is enabled. When enabled pressing `p`</span>
-   <span class="c1">;; several times cycle between the kill ring content. (default nil)</span>
-   <span class="nv">dotspacemacs-enable-paste-transient-state</span> <span class="no">nil</span>
-   <span class="c1">;; Which-key delay in seconds. The which-key buffer is the popup listing</span>
-   <span class="c1">;; the commands bound to the current keystroke sequence. (default 0.4)</span>
-   <span class="nv">dotspacemacs-which-key-delay</span> <span class="mf">0.4</span>
-   <span class="c1">;; Which-key frame position. Possible values are `right', `bottom' and</span>
-   <span class="c1">;; `right-then-bottom'. right-then-bottom tries to display the frame to the</span>
-   <span class="c1">;; right; if there is insufficient space it displays it at the bottom.</span>
-   <span class="c1">;; (default 'bottom)</span>
-   <span class="nv">dotspacemacs-which-key-position</span> <span class="ss">'bottom</span>
-   <span class="c1">;; If non nil a progress bar is displayed when spacemacs is loading. This</span>
-   <span class="c1">;; may increase the boot time on some systems and emacs builds, set it to</span>
-   <span class="c1">;; nil to boost the loading time. (default t)</span>
-   <span class="nv">dotspacemacs-loading-progress-bar</span> <span class="no">t</span>
-   <span class="c1">;; If non nil the frame is fullscreen when Emacs starts up. (default nil)</span>
-   <span class="c1">;; (Emacs 24.4+ only)</span>
-   <span class="nv">dotspacemacs-fullscreen-at-startup</span> <span class="no">nil</span>
-   <span class="c1">;; If non nil `spacemacs/toggle-fullscreen' will not use native fullscreen.</span>
-   <span class="c1">;; Use to disable fullscreen animations in OSX. (default nil)</span>
-   <span class="nv">dotspacemacs-fullscreen-use-non-native</span> <span class="no">nil</span>
-   <span class="c1">;; If non nil the frame is maximized when Emacs starts up.</span>
-   <span class="c1">;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.</span>
-   <span class="c1">;; (default nil) (Emacs 24.4+ only)</span>
-   <span class="nv">dotspacemacs-maximized-at-startup</span> <span class="no">nil</span>
-   <span class="c1">;; A value from the range (0..100), in increasing opacity, which describes</span>
-   <span class="c1">;; the transparency level of a frame when it's active or selected.</span>
-   <span class="c1">;; Transparency can be toggled through `toggle-transparency'. (default 90)</span>
-   <span class="nv">dotspacemacs-active-transparency</span> <span class="mi">90</span>
-   <span class="c1">;; A value from the range (0..100), in increasing opacity, which describes</span>
-   <span class="c1">;; the transparency level of a frame when it's inactive or deselected.</span>
-   <span class="c1">;; Transparency can be toggled through `toggle-transparency'. (default 90)</span>
-   <span class="nv">dotspacemacs-inactive-transparency</span> <span class="mi">90</span>
-   <span class="c1">;; If non nil show the titles of transient states. (default t)</span>
-   <span class="nv">dotspacemacs-show-transient-state-title</span> <span class="no">t</span>
-   <span class="c1">;; If non nil show the color guide hint for transient state keys. (default t)</span>
-   <span class="nv">dotspacemacs-show-transient-state-color-guide</span> <span class="no">t</span>
-   <span class="c1">;; If non nil unicode symbols are displayed in the mode line. (default t)</span>
-   <span class="nv">dotspacemacs-mode-line-unicode-symbols</span> <span class="no">t</span>
-   <span class="c1">;; If non nil smooth scrolling (native-scrolling) is enabled. Smooth</span>
-   <span class="c1">;; scrolling overrides the default behavior of Emacs which recenters point</span>
-   <span class="c1">;; when it reaches the top or bottom of the screen. (default t)</span>
-   <span class="nv">dotspacemacs-smooth-scrolling</span> <span class="no">t</span>
-   <span class="c1">;; Control line numbers activation.</span>
-   <span class="c1">;; If set to `t' or `relative' line numbers are turned on in all `prog-mode' and</span>
-   <span class="c1">;; `text-mode' derivatives. If set to `relative', line numbers are relative.</span>
-   <span class="c1">;; This variable can also be set to a property list for finer control:</span>
-   <span class="c1">;; '(:relative nil</span>
-   <span class="c1">;;   :disabled-for-modes dired-mode</span>
-   <span class="c1">;;                       doc-view-mode</span>
-   <span class="c1">;;                       markdown-mode</span>
-   <span class="c1">;;                       org-mode</span>
-   <span class="c1">;;                       pdf-view-mode</span>
-   <span class="c1">;;                       text-mode</span>
-   <span class="c1">;;   :size-limit-kb 1000)</span>
-   <span class="c1">;; (default nil)</span>
-   <span class="nv">dotspacemacs-line-numbers</span> <span class="no">t</span>
-   <span class="c1">;; Code folding method. Possible values are `evil' and `origami'.</span>
-   <span class="c1">;; (default 'evil)</span>
-   <span class="nv">dotspacemacs-folding-method</span> <span class="ss">'evil</span>
-   <span class="c1">;; If non-nil smartparens-strict-mode will be enabled in programming modes.</span>
-   <span class="c1">;; (default nil)</span>
-   <span class="nv">dotspacemacs-smartparens-strict-mode</span> <span class="no">nil</span>
-   <span class="c1">;; If non-nil pressing the closing parenthesis `)' key in insert mode passes</span>
-   <span class="c1">;; over any automatically added closing parenthesis, bracket, quote, etc…</span>
-   <span class="c1">;; This can be temporary disabled by pressing `C-q' before `)'. (default nil)</span>
-   <span class="nv">dotspacemacs-smart-closing-parenthesis</span> <span class="no">nil</span>
-   <span class="c1">;; Select a scope to highlight delimiters. Possible values are `any',</span>
-   <span class="c1">;; `current', `all' or `nil'. Default is `all' (highlight any scope and</span>
-   <span class="c1">;; emphasis the current one). (default 'all)</span>
-   <span class="nv">dotspacemacs-highlight-delimiters</span> <span class="ss">'all</span>
-   <span class="c1">;; If non nil, advise quit functions to keep server open when quitting.</span>
-   <span class="c1">;; (default nil)</span>
-   <span class="nv">dotspacemacs-persistent-server</span> <span class="no">nil</span>
-   <span class="c1">;; List of search tool executable names. Spacemacs uses the first installed</span>
-   <span class="c1">;; tool of the list. Supported tools are `ag', `pt', `ack' and `grep'.</span>
-   <span class="c1">;; (default '("ag" "pt" "ack" "grep"))</span>
-   <span class="nv">dotspacemacs-search-tools</span> <span class="o">'</span><span class="p">(</span><span class="s">"ag"</span> <span class="s">"pt"</span> <span class="s">"ack"</span> <span class="s">"grep"</span><span class="p">)</span>
-   <span class="c1">;; The default package repository used if no explicit repository has been</span>
-   <span class="c1">;; specified with an installed package.</span>
-   <span class="c1">;; Not used for now. (default nil)</span>
-   <span class="nv">dotspacemacs-default-package-repository</span> <span class="no">nil</span>
-   <span class="c1">;; Delete whitespace while saving buffer. Possible values are `all'</span>
-   <span class="c1">;; to aggressively delete empty line and long sequences of whitespace,</span>
-   <span class="c1">;; `trailing' to delete only the whitespace at end of lines, `changed'to</span>
-   <span class="c1">;; delete only whitespace for changed lines or `nil' to disable cleanup.</span>
-   <span class="c1">;; (default nil)</span>
-   <span class="nv">dotspacemacs-whitespace-cleanup</span> <span class="no">nil</span>
-   <span class="p">))</span>
-
-<span class="p">(</span><span class="nb">defun</span> <span class="nv">dotspacemacs/user-init</span> <span class="p">()</span>
-  <span class="s">"Initialization function for user code.
-It is called immediately after `dotspacemacs/init', before layer configuration
-executes.
- This function is mostly useful for variables that need to be set
-before packages are loaded. If you are unsure, you should try in setting them in
-`dotspacemacs/user-config' first."</span>
-  <span class="p">)</span>
-
-<span class="p">(</span><span class="nb">defun</span> <span class="nv">dotspacemacs/user-config</span> <span class="p">()</span>
-  <span class="s">"Configuration function for user code.
-This function is called at the very end of Spacemacs initialization after
-layers configuration.
-This is the place where most of your configurations should be done. Unless it is
-explicitly specified that a variable should be set before a package is loaded,
-you should place your code here."</span>
-  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">'text-mode-hook</span> <span class="ss">'spacemacs/toggle-visual-line-navigation-on</span><span class="p">)</span>
-  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">'text-mode-hook</span> <span class="ss">'spacemacs/toggle-truncate-lines-on</span><span class="p">)</span>
-  <span class="p">(</span><span class="nv">setq-default</span> <span class="nv">line-spacing</span> <span class="mi">3</span><span class="p">)</span>
-  <span class="p">(</span><span class="nv">setq-default</span> <span class="nv">truncate-lines</span> <span class="no">t</span><span class="p">)</span>
-  <span class="p">(</span><span class="nv">setq-default</span> <span class="nv">helm-boiring-buffer-regexp-list</span> <span class="nv">spacemacs-useless-buffers-regexp</span><span class="p">)</span>
-  <span class="p">(</span><span class="nv">setq-default</span> <span class="nv">global-visual-mode</span> <span class="no">t</span><span class="p">)</span>
-  <span class="p">(</span><span class="nv">setq-default</span> <span class="nv">indent-tabs-mode</span> <span class="no">t</span><span class="p">)</span>
-	<span class="p">(</span><span class="nv">setq-default</span> <span class="nv">c-default-style</span> <span class="s">"java"</span><span class="p">)</span>
-	<span class="p">(</span><span class="nv">editorconfig-mode</span> <span class="mi">1</span><span class="p">)</span>
-	<span class="p">(</span><span class="k">setq</span> <span class="nv">initial-frame-alist</span> <span class="o">'</span><span class="p">((</span><span class="nv">top</span> <span class="o">.</span> <span class="mi">30</span><span class="p">)</span> <span class="p">(</span><span class="nv">left</span> <span class="o">.</span> <span class="mi">30</span><span class="p">)</span> <span class="p">(</span><span class="nv">width</span> <span class="o">.</span> <span class="mi">96</span><span class="p">)</span> <span class="p">(</span><span class="nv">height</span> <span class="o">.</span> <span class="mi">53</span><span class="p">)))</span>
-  <span class="p">)</span>
-
-<span class="c1">;; Do not write anything past this comment. This is where Emacs will</span>
-<span class="c1">;; auto-generate custom variable definitions.</span>
-<span class="p">(</span><span class="nv">custom-set-variables</span>
- <span class="c1">;; custom-set-variables was added by Custom.</span>
- <span class="c1">;; If you edit it by hand, you could mess it up, so be careful.</span>
- <span class="c1">;; Your init file should contain only one such instance.</span>
- <span class="c1">;; If there is more than one, they won't work right.</span>
- <span class="o">'</span><span class="p">(</span><span class="nv">custom-safe-themes</span>
-	 <span class="p">(</span><span class="k">quote</span>
-		<span class="p">(</span><span class="s">"5a0eee1070a4fc64268f008a4c7abfda32d912118e080e18c3c865ef864d1bea"</span> <span class="s">"c3e6b52caa77cb09c049d3c973798bc64b5c43cc437d449eacf35b3e776bf85c"</span> <span class="s">"bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476"</span> <span class="s">"fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088"</span> <span class="nv">default</span><span class="p">)))</span>
- <span class="o">'</span><span class="p">(</span><span class="nv">evil-want-Y-yank-to-eol</span> <span class="no">nil</span><span class="p">)</span>
- <span class="o">'</span><span class="p">(</span><span class="nv">package-selected-packages</span>
-	 <span class="p">(</span><span class="k">quote</span>
-		<span class="p">(</span><span class="nv">yaml-mode</span> <span class="nv">mmm-mode</span> <span class="nv">markdown-toc</span> <span class="nv">markdown-mode</span> <span class="nv">gh-md</span> <span class="nv">zenburn-theme</span> <span class="nv">zen-and-art-theme</span> <span class="nv">white-sand-theme</span> <span class="nv">underwater-theme</span> <span class="nv">ujelly-theme</span> <span class="nv">twilight-theme</span> <span class="nv">twilight-bright-theme</span> <span class="nv">twilight-anti-bright-theme</span> <span class="nv">toxi-theme</span> <span class="nv">tao-theme</span> <span class="nv">tangotango-theme</span> <span class="nv">tango-plus-theme</span> <span class="nv">tango-2-theme</span> <span class="nv">sunny-day-theme</span> <span class="nv">sublime-themes</span> <span class="nv">subatomic256-theme</span> <span class="nv">subatomic-theme</span> <span class="nv">spacegray-theme</span> <span class="nv">soothe-theme</span> <span class="nv">solarized-theme</span> <span class="nv">soft-stone-theme</span> <span class="nv">soft-morning-theme</span> <span class="nv">soft-charcoal-theme</span> <span class="nv">smyx-theme</span> <span class="nv">seti-theme</span> <span class="nv">reverse-theme</span> <span class="nv">rebecca-theme</span> <span class="nv">railscasts-theme</span> <span class="nv">purple-haze-theme</span> <span class="nv">professional-theme</span> <span class="nv">planet-theme</span> <span class="nv">phoenix-dark-pink-theme</span> <span class="nv">phoenix-dark-mono-theme</span> <span class="nv">organic-green-theme</span> <span class="nv">omtose-phellack-theme</span> <span class="nv">oldlace-theme</span> <span class="nv">occidental-theme</span> <span class="nv">obsidian-theme</span> <span class="nv">noctilux-theme</span> <span class="nv">naquadah-theme</span> <span class="nv">mustang-theme</span> <span class="nv">monokai-theme</span> <span class="nv">monochrome-theme</span> <span class="nv">molokai-theme</span> <span class="nv">moe-theme</span> <span class="nv">minimal-theme</span> <span class="nv">material-theme</span> <span class="nv">majapahit-theme</span> <span class="nv">madhat2r-theme</span> <span class="nv">lush-theme</span> <span class="nv">light-soap-theme</span> <span class="nv">jbeans-theme</span> <span class="nv">jazz-theme</span> <span class="nv">ir-black-theme</span> <span class="nv">inkpot-theme</span> <span class="nv">heroku-theme</span> <span class="nv">hemisu-theme</span> <span class="nv">hc-zenburn-theme</span> <span class="nv">gruvbox-theme</span> <span class="nv">gruber-darker-theme</span> <span class="nv">grandshell-theme</span> <span class="nv">gotham-theme</span> <span class="nv">gandalf-theme</span> <span class="nv">flatui-theme</span> <span class="nv">flatland-theme</span> <span class="nv">farmhouse-theme</span> <span class="nv">exotica-theme</span> <span class="nv">espresso-theme</span> <span class="nv">dracula-theme</span> <span class="nv">django-theme</span> <span class="nv">darktooth-theme</span> <span class="nv">autothemer</span> <span class="nv">darkokai-theme</span> <span class="nv">darkmine-theme</span> <span class="nv">darkburn-theme</span> <span class="nv">dakrone-theme</span> <span class="nv">cyberpunk-theme</span> <span class="nv">color-theme-sanityinc-tomorrow</span> <span class="nv">color-theme-sanityinc-solarized</span> <span class="nv">clues-theme</span> <span class="nv">cherry-blossom-theme</span> <span class="nv">busybee-theme</span> <span class="nv">bubbleberry-theme</span> <span class="nv">birds-of-paradise-plus-theme</span> <span class="nv">badwolf-theme</span> <span class="nv">apropospriate-theme</span> <span class="nv">anti-zenburn-theme</span> <span class="nv">ample-zen-theme</span> <span class="nv">ample-theme</span> <span class="nv">alect-themes</span> <span class="nv">afternoon-theme</span> <span class="nv">smeargle</span> <span class="nv">orgit</span> <span class="nv">magit-gitflow</span> <span class="nv">magit-popup</span> <span class="nv">helm-gitignore</span> <span class="nv">gitignore-mode</span> <span class="nv">gitconfig-mode</span> <span class="nv">gitattributes-mode</span> <span class="nv">git-timemachine</span> <span class="nv">git-messenger</span> <span class="nv">git-link</span> <span class="nv">evil-magit</span> <span class="nv">magit</span> <span class="nv">transient</span> <span class="nv">git-commit</span> <span class="nv">with-editor</span> <span class="nv">web-beautify</span> <span class="nv">livid-mode</span> <span class="nv">skewer-mode</span> <span class="nv">simple-httpd</span> <span class="nv">json-mode</span> <span class="nv">json-snatcher</span> <span class="nv">json-reformat</span> <span class="nv">js2-refactor</span> <span class="nv">yasnippet</span> <span class="nv">multiple-cursors</span> <span class="nv">js2-mode</span> <span class="nv">js-doc</span> <span class="nv">coffee-mode</span> <span class="nv">editorconfig</span> <span class="nv">web-mode</span> <span class="nv">tagedit</span> <span class="nv">slim-mode</span> <span class="nv">scss-mode</span> <span class="nv">sass-mode</span> <span class="nv">pug-mode</span> <span class="nv">helm-css-scss</span> <span class="nv">haml-mode</span> <span class="nv">emmet-mode</span> <span class="nv">yapfify</span> <span class="nv">pyvenv</span> <span class="nv">pytest</span> <span class="nv">pyenv-mode</span> <span class="nv">py-isort</span> <span class="nv">pip-requirements</span> <span class="nv">live-py-mode</span> <span class="nv">hy-mode</span> <span class="nv">dash-functional</span> <span class="nv">helm-pydoc</span> <span class="nv">cython-mode</span> <span class="nv">anaconda-mode</span> <span class="nv">pythonic</span> <span class="nv">ws-butler</span> <span class="nv">winum</span> <span class="nv">volatile-highlights</span> <span class="nv">vi-tilde-fringe</span> <span class="nv">uuidgen</span> <span class="nb">use-package</span> <span class="nv">toc-org</span> <span class="nv">spaceline</span> <span class="nv">powerline</span> <span class="nv">restart-emacs</span> <span class="nv">request</span> <span class="nv">rainbow-delimiters</span> <span class="nv">popwin</span> <span class="nv">persp-mode</span> <span class="nv">pcre2el</span> <span class="nv">paradox</span> <span class="nv">spinner</span> <span class="nv">org-bullets</span> <span class="nv">open-junk-file</span> <span class="nv">neotree</span> <span class="nv">move-text</span> <span class="nv">macrostep</span> <span class="nv">lorem-ipsum</span> <span class="nv">linum-relative</span> <span class="nv">link-hint</span> <span class="nv">indent-guide</span> <span class="nv">lv</span> <span class="nv">hungry-delete</span> <span class="nv">hl-todo</span> <span class="nv">highlight-parentheses</span> <span class="nv">highlight-numbers</span> <span class="nv">parent-mode</span> <span class="nv">highlight-indentation</span> <span class="nv">helm-themes</span> <span class="nv">helm-swoop</span> <span class="nv">helm-projectile</span> <span class="nv">projectile</span> <span class="nv">pkg-info</span> <span class="nv">epl</span> <span class="nv">helm-mode-manager</span> <span class="nv">helm-make</span> <span class="nv">helm-flx</span> <span class="nv">helm-descbinds</span> <span class="nv">helm-ag</span> <span class="nv">google-translate</span> <span class="nv">golden-ratio</span> <span class="nv">flx-ido</span> <span class="nv">flx</span> <span class="nv">fill-column-indicator</span> <span class="nv">fancy-battery</span> <span class="nv">eyebrowse</span> <span class="nv">expand-region</span> <span class="nv">exec-path-from-shell</span> <span class="nv">evil-visualstar</span> <span class="nv">evil-visual-mark-mode</span> <span class="nv">evil-tutor</span> <span class="nv">evil-surround</span> <span class="nv">evil-search-highlight-persist</span> <span class="nv">highlight</span> <span class="nv">evil-numbers</span> <span class="nv">evil-nerd-commenter</span> <span class="nv">evil-mc</span> <span class="nv">evil-matchit</span> <span class="nv">evil-lisp-state</span> <span class="nv">smartparens</span> <span class="nv">evil-indent-plus</span> <span class="nv">evil-iedit-state</span> <span class="nv">iedit</span> <span class="nv">evil-exchange</span> <span class="nv">evil-escape</span> <span class="nv">evil-ediff</span> <span class="nv">evil-args</span> <span class="nv">evil-anzu</span> <span class="nv">anzu</span> <span class="nv">evil</span> <span class="nv">goto-chg</span> <span class="nv">eval-sexp-fu</span> <span class="nv">elisp-slime-nav</span> <span class="nv">dumb-jump</span> <span class="nv">diminish</span> <span class="nv">define-word</span> <span class="nv">column-enforce-mode</span> <span class="nv">clean-aindent-mode</span> <span class="nv">bind-map</span> <span class="nv">bind-key</span> <span class="nv">auto-highlight-symbol</span> <span class="nv">auto-compile</span> <span class="nv">packed</span> <span class="nv">ace-link</span> <span class="nv">ace-jump-helm-line</span> <span class="nv">helm</span> <span class="nv">helm-core</span> <span class="nv">popup</span> <span class="nv">which-key</span> <span class="nv">undo-tree</span> <span class="nv">org-plus-contrib</span> <span class="nv">hydra</span> <span class="nv">evil-unimpaired</span> <span class="nv">async</span> <span class="nv">aggressive-indent</span> <span class="nv">adaptive-wrap</span> <span class="nv">ace-window</span><span class="p">))))</span>
-<span class="p">(</span><span class="nv">custom-set-faces</span>
- <span class="c1">;; custom-set-faces was added by Custom.</span>
- <span class="c1">;; If you edit it by hand, you could mess it up, so be careful.</span>
- <span class="c1">;; Your init file should contain only one such instance.</span>
- <span class="c1">;; If there is more than one, they won't work right.</span>
- <span class="p">)</span>
+   <span class="p">)</span>
+<span class="p">)</span>
 </code></pre></div></div>
+
+<p>OK，试完了 Lisp 来试试 Java 的</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">EngineConfigChooser</span> <span class="kd">implements</span> <span class="nc">GLSurfaceView</span><span class="o">.</span><span class="na">EGLConfigChooser</span> <span class="o">{</span>
+    <span class="c1">// === CONSTANT === //</span>
+    <span class="kd">final</span> <span class="kd">static</span> <span class="kt">int</span> <span class="no">EGL_COVERAGE_SAMPLES_NV</span> <span class="o">=</span> <span class="mh">0x30E1</span><span class="o">;</span>
+    <span class="kd">final</span> <span class="kd">static</span> <span class="kt">int</span> <span class="no">EGL_COVERAGE_BUFFERS_NV</span> <span class="o">=</span> <span class="mh">0x30E0</span><span class="o">;</span>
+
+    <span class="c1">// === METHODS === //</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="nc">EGLConfig</span> <span class="nf">chooseConfig</span><span class="o">(</span><span class="no">EGL10</span> <span class="n">egl10</span><span class="o">,</span> <span class="nc">EGLDisplay</span> <span class="n">eglDisplay</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">attribs</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[]</span> <span class="o">{</span>
+                <span class="no">EGL10</span><span class="o">.</span><span class="na">EGL_COLOR_BUFFER_TYPE</span><span class="o">,</span> <span class="no">EGL11</span><span class="o">.</span><span class="na">EGL_RGB_BUFFER</span><span class="o">,</span>
+                <span class="no">EGL10</span><span class="o">.</span><span class="na">EGL_RED_SIZE</span><span class="o">,</span> <span class="mi">8</span><span class="o">,</span>
+                <span class="no">EGL10</span><span class="o">.</span><span class="na">EGL_GREEN_SIZE</span><span class="o">,</span> <span class="mi">8</span><span class="o">,</span>
+                <span class="no">EGL10</span><span class="o">.</span><span class="na">EGL_BLUE_SIZE</span><span class="o">,</span> <span class="mi">8</span><span class="o">,</span>
+                <span class="no">EGL10</span><span class="o">.</span><span class="na">EGL_DEPTH_SIZE</span><span class="o">,</span> <span class="mi">16</span><span class="o">,</span>
+<span class="c1">//                EGL10.EGL_SAMPLE_BUFFERS, 1,</span>
+<span class="c1">//                EGL10.EGL_SAMPLES, 4, // 4x MXAA</span>
+                <span class="no">EGL10</span><span class="o">.</span><span class="na">EGL_NONE</span>
+        <span class="o">};</span>
+        <span class="nc">EGLConfig</span><span class="o">[]</span> <span class="n">configs</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">EGLConfig</span><span class="o">[</span><span class="mi">1</span><span class="o">];</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">configCounts</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">1</span><span class="o">];</span>
+        <span class="n">egl10</span><span class="o">.</span><span class="na">eglChooseConfig</span><span class="o">(</span><span class="n">eglDisplay</span><span class="o">,</span> <span class="n">attribs</span><span class="o">,</span> <span class="n">configs</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="n">configCounts</span><span class="o">);</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">configCounts</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+            <span class="nc">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">"Error!"</span><span class="o">,</span> <span class="s">"eGLChooseConfig was disastrous."</span><span class="o">);</span>
+            <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">configs</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>C/C++</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">createServerSocket</span><span class="p">(</span><span class="n">in_addr_t</span> <span class="n">inAddr</span><span class="p">,</span> <span class="kt">int</span> <span class="n">port</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">sock</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">sockaddr_in</span> <span class="n">sin</span><span class="p">;</span>
+    <span class="n">sin</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="n">inAddr</span><span class="p">;</span>
+    <span class="n">sin</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="n">htons</span><span class="p">(</span><span class="n">port</span><span class="p">);</span>
+    <span class="n">sin</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="n">bind</span><span class="p">(</span><span class="n">sock</span><span class="p">,</span> <span class="p">(</span><span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span> <span class="o">&amp;</span><span class="n">sin</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">sin</span><span class="p">));</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">res</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Server creation failed: "</span> <span class="o">&lt;&lt;</span> <span class="n">res</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+        <span class="k">return</span> <span class="n">res</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">listen</span><span class="p">(</span><span class="n">sock</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">sock</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">handle</span><span class="p">(</span><span class="kt">int</span> <span class="n">client</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Incoming connection: "</span> <span class="o">&lt;&lt;</span> <span class="n">client</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">in</span><span class="p">[</span><span class="mi">1024</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">0</span> <span class="p">};</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">ssize_t</span> <span class="n">len</span> <span class="o">=</span> <span class="n">recv</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="p">)</span> <span class="n">in</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">in</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">len</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">in</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
+        <span class="n">write</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">in</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Python?</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">vdw</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># list vdw number in OPLSAA 
+</span><span class="n">BAD</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># list BAD (Bond-Angle-Dihedral) number in OPLSAA
+</span><span class="n">BAD</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># { 0 } 
+</span><span class="n">vdw</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># { 0 }
+</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># starts from 1
+</span><span class="n">pc</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">pair_coeffs</span> <span class="c1"># pc is molecules' pair coefficient
+</span><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">natom</span><span class="p">:</span>
+    <span class="n">nvdw</span> <span class="o">=</span> <span class="n">pc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"BAD"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"vdw"</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">nbad</span> <span class="o">=</span> <span class="n">pc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"BAD"</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">vdw</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">nvdw</span><span class="p">)</span>
+    <span class="n">BAD</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">nbad</span><span class="p">)</span> <span class="c1"># BAD[atomid] = nbad (what is nbad??)
+</span>    <span class="k">print</span> <span class="n">vdw</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">BAD</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div></div>
+
+<p>好吧不试了。。。总的来说没啥问题</p>
+
 
       </div>
       <div class="divider"></div>

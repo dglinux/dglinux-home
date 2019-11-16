@@ -33,41 +33,87 @@
 
 
       <div class="article">
-        <h1>Welcome to Jekyll!</h1>
+        <h1>食用指南</h1>
         <div class="post-info">
-          <div><i class="fas fa-clock"></i> 发布日期: 2019-11-15 00:00:00 +0800</div>
+          <div><i class="fas fa-clock"></i> 发布日期: 2019-11-16 00:00:00 +0800</div>
           <div><i class="fas fa-archive"></i> 分类:
             
-            <span class="tag">jekyll</span>
-            
-            <span class="tag">update</span>
+            <span class="tag">tutorial</span>
             
           </div>
           <div><i class="fas fa-link"></i> 永久链接:
-            <a href="http://0.0.0.0:4000/jekyll/update/2019/11/15/welcome-to-jekyll.html">http://0.0.0.0:4000/jekyll/update/2019/11/15/welcome-to-jekyll.html</a>
+            <a href="http://0.0.0.0:4000/tutorial/2019/11/16/how-to-eat-this-thing.html">http://0.0.0.0:4000/tutorial/2019/11/16/how-to-eat-this-thing.html</a>
           </div>
         </div>
       </div>
       <div class="snip"></div>
       <div class="article article__centerify">
-        <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+        <p>本篇食用指南将会（充满希望的）给你一个大概的感觉，这玩意儿该咋用。好了咱们马上开始吧！ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<h1 id="一级标题">一级标题</h1>
 
-<p><code class="highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<p>一级标题是超级大的标题。具体可以和下面的那个比一下。</p>
 
-<p>Where <code class="highlighter-rouge">YEAR</code> is a four-digit number, <code class="highlighter-rouge">MONTH</code> and <code class="highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<h2 id="二级标题">二级标题</h2>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>这是二级标题。</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<h3 id="这是三级标题">这是三级标题</h3>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<h4 id="四级标题">四级标题</h4>
 
+<h5 id="这是真的小">这是真的小</h5>
+
+<p>插入图片或者资源要在图片 / 资源路径前面增加一个 {{ site.baseurl }}。譬如这个：</p>
+
+<p><img src="/haha/assets/lenna.png" alt="Lenna" /></p>
+
+<p>大部分的 html tag 其实并没有经过 CSS 处理，但也可以正常使用。譬如说顺序列表：</p>
+
+<ol>
+  <li>先这样</li>
+  <li>然后那样</li>
+  <li>检查一下这样怎么样？</li>
+  <li>profit</li>
+</ol>
+
+<ul>
+  <li>这个玩意儿</li>
+  <li>并没有 1 2 3 4 5</li>
+  <li>但是也妹有关系</li>
+</ul>
+
+<blockquote>
+  <p>We must accept finite disappointment, but never lose infinite hope. —— Martin Luther King Jr.</p>
+</blockquote>
+
+<p>假如你说着说着话，突然感觉有 <strong>必要</strong> 把字加粗的话，可以用刚才那种方法，也可以用 <strong>这种方法</strong> 。假如你想要不知道为什么用斜体的话，<em>不要担心</em>！<em>你一定会找到怎么用的</em>。假如你打错<del>紫</del>字了想把他划掉，也是可以的。假如你想要使用表格，</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>也是</th>
+      <th>可以</th>
+      <th>的</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>你好</td>
+      <td>世界</td>
+      <td>123</td>
+    </tr>
+    <tr>
+      <td>456</td>
+      <td><code class="highlighter-rouge">Code embedding</code></td>
+      <td>English</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>具体的表格，可以来 <a href="https://www.tablesgenerator.com/markdown_tables">这里</a> 生成。<strong>贼好用！</strong></p>
+
+<p>大概就是这样了。有的话再说吧！咱们下次再见！bye bye!</p>
 
       </div>
       <div class="divider"></div>

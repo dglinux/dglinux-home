@@ -44,6 +44,65 @@ pre {
   overflow: scroll;
 }
 
+blockquote {
+  display: flex;
+}
+
+blockquote:before {
+  flex: 1;
+  left: -20px;
+  font-weight: 1000;
+  font-size: 50px;
+  color: rgba(24, 123, 9, 0.5);
+  height: 1em;
+  margin-right: 1rem;
+  content: "“";
+}
+
+table {
+  border-spacing: 0;
+  border-top: 1px rgb(24, 123, 9) solid;
+  margin: 1em auto;
+}
+
+th {
+  border: 1px rgb(24, 123, 9) solid;
+  color: rgb(24, 123, 9);
+  font-size: 0.8em;
+  margin: -1px -1px;
+  font-weight: 1000;
+  border-right: 0;
+  border-top: 0;
+  padding: 0.25em 1em;
+}
+
+th:last-child {
+  border-right: 1px rgb(24, 123, 9) solid;
+}
+
+td {
+  border: 1px #bbbbbb solid;
+  color: #444444;
+  margin: -1px -1px;
+  border-right: 0;
+  border-top: 0;
+  font-size: 0.9em;
+  padding: 0.25em 1em;
+}
+
+td:last-child {
+  margin-right: -1px;
+  border-right: 1px #bbbbbb solid;
+}
+
+td:hover {
+  background-color: rgb(30, 150, 16);
+  box-shadow: 0 2px 0 2px #eeeeee;
+  border-color: rgb(30, 150, 16);
+  color: white;
+  transition: 0.3s all;
+}
+
 /* === CODE HIGHLIGHTING === */
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
