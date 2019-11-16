@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 时间旅行者来啦！
+title: Space Oddity
 categories: time travel
+author: David Bowie
 ---
 
 Ground Control to Major Tom  

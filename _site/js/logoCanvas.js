@@ -22,7 +22,7 @@ class LogoCanvas {
     // === RENDER DATA === //
     const renderData = {};
     renderData.logo = new Image();
-    renderData.logo.src = "/haha/assets/logo.png";
+    renderData.logo.src = "/assets/logo.png";
     renderData.logo.size = this.unmap(renderData.logo.width, renderData.logo.height);
 
     const circles = [];

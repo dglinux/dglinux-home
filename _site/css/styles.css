@@ -1,12 +1,12 @@
 /* === EXTRA FONTS === */
 @font-face {
   font-family: "Iosevka";
-  src: url("/haha/assets/iosevka-light.woff2") format("woff2");
+  src: url("/assets/iosevka-light.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Iosevka";
-  src: url("/haha/assets/iosevka-italic.woff2") format("woff2");
+  src: url("/assets/iosevka-italic.woff2") format("woff2");
   font-style: italic;
 }
 

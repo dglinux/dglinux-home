@@ -1,6 +1,7 @@
 ---
 title: 食用指南
 layout: post
+author: 42yeah
 category: tutorial
 ---
 
