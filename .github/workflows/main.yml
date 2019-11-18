@@ -23,5 +23,5 @@ jobs:
         name: lyekumchew/dgutlug_website_home
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        dockerfile: ${{ github.workspace }}/docker/Dockerfile
+        dockerfile: ${{ github.workspace }}/.docker/Dockerfile
         workdir: ${{ github.workspace }}
