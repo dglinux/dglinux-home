@@ -1,4 +1,0 @@
----
-layout: tools
-type: tools
----
