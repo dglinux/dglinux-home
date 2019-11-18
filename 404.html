@@ -17,23 +17,7 @@ permalink: /404.html
   </head>
   <body>
     <div class="full-screen">
-      <div id="introduction-bar" class="introduction-bar">
-        <a class="introduction-item" href="{{ site.baseurl }}/">
-          主页
-        </a>
-        <a class="introduction-item" href="{{ site.baseurl }}/introduction">
-          协会介绍
-        </a>
-        <a class="introduction-item" href="{{ site.baseurl }}/blog">
-          博客
-        </a>
-        <a class="introduction-item" href="{{ site.baseurl }}/tools">
-          工具
-        </a>
-        <a class="introduction-item" href="{{ site.baseurl }}/about">
-          关于
-        </a>
-      </div>
+      {% include introduction-bar.html %}
       <div class="banner-canvas-holder">
         <canvas class="banner-canvas" id="error-canvas">
           Canvas 还在加载，不要在意
