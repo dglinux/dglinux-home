@@ -17,20 +17,7 @@ permalink: /404.html
   </head>
   <body>
     <div class="full-screen">
-      <div class="top-bar"></div>
-      <div class="banner-canvas-holder">
-        <canvas class="banner-canvas" id="error-canvas">
-          Canvas 还在加载，不要在意
-        </canvas>
-      </div>
-      <div class="banner-title">
-        404
-        <div class="banner-subtitle">
-          无法找到此页面
-        </div>
-        <div>&nbsp;</div>
-      </div>
-      <div id="introduction-bar" class="introduction-bar introduction-bar__bottom">
+      <div id="introduction-bar" class="introduction-bar">
         <a class="introduction-item" href="{{ site.baseurl }}/">
           主页
         </a>
@@ -46,6 +33,18 @@ permalink: /404.html
         <a class="introduction-item" href="{{ site.baseurl }}/about">
           关于
         </a>
+      </div>
+      <div class="banner-canvas-holder">
+        <canvas class="banner-canvas" id="error-canvas">
+          Canvas 还在加载，不要在意
+        </canvas>
+      </div>
+      <div class="banner-title">
+        404
+        <div class="banner-subtitle">
+          无法找到此页面
+        </div>
+        <div>&nbsp;</div>
       </div>
     </div>
   </body>
