@@ -537,3 +537,8 @@ img {
   padding: 0 10%;
 }
 
+@media screen and (min-width: 1000px) {
+  .slightly-right-offset {
+    margin-left: 2em;
+  }
+}
