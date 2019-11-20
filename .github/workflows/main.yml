@@ -2,6 +2,9 @@ name: DGUT GUN/LINUX GROUP HOME SITE CI
 
 on:
   push:
+    branches:    
+      - master
+  pull_request:
     branches:
       - master
 
@@ -11,13 +14,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - name: Checkout
+      uses: actions/checkout@master
+
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
-    - name: Publish to Registry
+    - name: Build & Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
         name: lyekumchew/dgutlug_website_home
