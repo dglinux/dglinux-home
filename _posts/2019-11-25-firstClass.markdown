@@ -2,12 +2,13 @@
 title: 回顾 | Linux系统安装以及基本命令
 layout: post
 author: dgtao
-category: ubuntu install
+category: ubuntu  install
 ---
 
 主讲人：**42yeah**
+  
+  本次分享会大致为大家讲解了一些Linux系统的发展，以及Linux_Ubuntu系统在虚拟机上的安装流程，一些基本且重要的操作命令。下有分享会的录播视频以及PPT，大家需要可自行下载。
 
-本次分享会大致为大家讲解了一些Linux系统的发展，以及Linux_Ubuntu系统在虚拟机上的安装流程，一些基本且重要的操作命令。以下有分享会的录播视频以及PPT，大家需要可自行下载。
 
 [录播视频](http://pan.dgut.edu.cn/drive/share/open_sharepage/6e2afb69-6808-4c5f-aaf9-c039f473fe79:bingosoft)
 
