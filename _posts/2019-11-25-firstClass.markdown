@@ -10,6 +10,7 @@ category: ubuntu  install
   本次分享会大致为大家讲解了一些Linux系统的发展，以及Linux_Ubuntu系统在虚拟机上的安装流程，一些基本且重要的操作命令。下有分享会的录播视频以及PPT，大家需要可自行下载。
 
 
+
 [录播视频](http://pan.dgut.edu.cn/drive/share/open_sharepage/6e2afb69-6808-4c5f-aaf9-c039f473fe79:bingosoft)
 
 [PPT](http://pan.dgut.edu.cn/drive/share/open_sharepage/bca95c0b-fa62-429d-88e7-64c4695e50f8:bingosoft)
@@ -19,7 +20,7 @@ category: ubuntu  install
 
 ---
 
-首先，向大家介绍了一些 **操作系统** 的基本概念，Linux系统 **Ubuntu** 的基本介绍以及优点，以及开源的重要性 ！
+首先，向大家介绍了一些 **操作系统** 的基本概念，Linux系统 **Ubuntu** 的基本介绍以及优点，以及开源的重要性 ！！
 
 ### Ubuntu 系统安装流程：
 
