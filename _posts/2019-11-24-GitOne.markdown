@@ -1,17 +1,14 @@
 ---
-
+title: Git Git Git
 layout: post
-title: "Git Git Git"
-categories: git
-author: dgTao
-
+author: dgtao
+category: git
 ---
 
 ## What is Git ##
-
-------------
-
 Git 又称为分布式版本控制系统。其实呢，Git 就是为 Linux 系统而生。在 IT 界可谓有着数不胜数的大牛，但大牛中的大牛就不太一样的，Linus无可非议就是其中的一位（下图），当然谈起这位 Linux 之父可能大家并不陌生，Git就是他用两周的时间完成的，但 Git 却根本不在其 Linus 的预料之内。
+
+
 
 到了2002年，Linux 的发展，使得当时Linux的开源社区涌入大量的代码。急需要一版本控制系统进行管理。分布式系统是 Linus 本人比较不太喜欢的领域，说是一种逃离式的躲避也并不夸张。在当时，分布式版本控制系统 BitKeeper 让 Linus 眼前一亮，同时 BitKeeper 的商业团队也为了促进 Linux 更好的发展，授权 Linux 社区免费使用这个版本控制系统。但好景不长，到了2005年，由于社区中许多大牛也对 BitKeeper 搞起了破解，当然这样肯定让人家 BitKeeper 商业团队十分的不爽，不久后， BitKeeper 决定收回其提供的免费版本，终止了 Linux 社区的合作。这，那咋办嘛？不要慌，问题很大，慌也没用。
 
@@ -19,7 +16,7 @@ Linus 不想倒退回到没有高效版本管理的时代；而除了 BitKeeper 
 
 <img src="/assets/gitOne/Selection_007.png" width="100" height="350"/>
 
-​	  注：
+	  注：
 
 > 集中式：版本库存放在中央服务器                                            
 > 分布式：没有中央服务器，版本库存在每个人自己的计算机上
@@ -36,12 +33,12 @@ Linus 不想倒退回到没有高效版本管理的时代；而除了 BitKeeper 
 
 想删除，又不太敢，万一哪天又想要咧、唉，真是难顶！又或者到了你想要的那一天，又怎么找得回来咧......当然啦， Git 肯定能实现这一点，而且是完美地实现好嘛！！
 
-|  版本   |   文件名  |  描述   |  时间  |
-| :----: | :------: | :----: | :----: |
-| dg12 | llinux.doc | 删除xxx|8/11 6:30|
-| dg15 | llinux.doc | 更改xxx|8/11 6:45|
-| dg17 | llinux.doc | 添加xxx|8/11 6:59|
-| ······· | ······· | ······· |·······|
+|  版本   |   文件名   |  描述   |   时间    |
+| :-----: | :--------: | :-----: | :-------: |
+|  dg12   | llinux.doc | 删除xxx | 8/11 6:30 |
+|  dg15   | llinux.doc | 更改xxx | 8/11 6:45 |
+|  dg17   | llinux.doc | 添加xxx | 8/11 6:59 |
+| ······· |  ·······   | ······· |  ·······  |
 
 
 你能够随时回到你选要的版本，这不就解决了嘛！！
@@ -56,7 +53,7 @@ Linus 不想倒退回到没有高效版本管理的时代；而除了 BitKeeper 
 
 大家可以选择自己系统的版本先点击进入官网进行 [Downloads](https://git-scm.com/downloads),
 
-​              <img src="/assets/gitOne/Download.png" width="200" height="250"/>
+              <img src="/assets/gitOne/Download.png" width="200" height="250"/>
 
 由于呢，我们是Linux....那个的嘛，所以呢，在这里为大家演示一下 Ubuntu 的下进行的安装流程！
 
@@ -110,4 +107,4 @@ core.logallrefupdates=true
 
 后续更多操作下次再发，下次一定！！！
 
-​                    Bye
+                    Bye
