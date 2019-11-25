@@ -16,7 +16,7 @@ Linus 不想倒退回到没有高效版本管理的时代；而除了 BitKeeper 
 
 <img src="/assets/gitOne/Selection_007.png" width="100" height="350"/>
 
-	  注：
+注：
 
 > 集中式：版本库存放在中央服务器                                            
 > 分布式：没有中央服务器，版本库存在每个人自己的计算机上
@@ -53,7 +53,7 @@ Linus 不想倒退回到没有高效版本管理的时代；而除了 BitKeeper 
 
 大家可以选择自己系统的版本先点击进入官网进行 [Downloads](https://git-scm.com/downloads),
 
-              <img src="/assets/gitOne/Download.png" width="200" height="250"/>
+<img src="/assets/gitOne/Download.png" width="200" height="250"/>
 
 由于呢，我们是Linux....那个的嘛，所以呢，在这里为大家演示一下 Ubuntu 的下进行的安装流程！
 
