@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 莞工 GNU/Linux 协会 - 开源自由，你我同在
+title: DGUT GNU/Linux 协会 - 开源自由，你我同在
 email: 42yeah@gmx.fr
 description: >- # this means to ignore newlines until "baseurl:"
-  莞工 GNU/Linux 协会是坐落在东莞理工学院的，讨论开源软件和操作系统以及其他各种各样的东西的协会。我们期望你也能加入！
+  DGUT GNU/Linux 协会是坐落在东莞理工学院的，讨论开源软件和操作系统以及其他各种各样的东西的协会。我们期望你也能加入！
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 

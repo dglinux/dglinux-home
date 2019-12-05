@@ -151,9 +151,9 @@ IDE 譬如 VSCode 和 Jetbrains 全家桶也在 Linux 上有，大家可以自�
 
 ``` shell
 ~$ touch test.txt
-~$ echo "莞工 GNU/Linux 协会" > test.txt
+~$ echo "DGUT GNU/Linux 协会" > test.txt
 ~$ cat test.txt
-莞工 GNU/Linux 协会
+DGUT GNU/Linux 协会
 ```
 
 
