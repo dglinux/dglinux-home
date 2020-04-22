@@ -3,13 +3,13 @@ title: 分享会预告 | Web渗透测试_实战
 layout: post
 author: dgtao
 category: Penetration
+excerpt: 分享会预告：Web渗透测试以及实战
 ---
 技术分享会，它又来了。
 
 我们这次带来的主题是**Web渗透测试**。
 
 现在的黑客通常会使用破解、逆向和web渗透等技术进行网站爆破，这次的技术分享会。我们将会为大家讲解Web渗透，并且会在现场进行一些实战操作。    
-
 
 ----
 

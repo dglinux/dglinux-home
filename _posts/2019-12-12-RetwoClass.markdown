@@ -3,6 +3,7 @@ layout: post
 title: 回顾 | Web渗透测试以及实战
 category: web 
 author: dgtao
+excerpt: 分享会回顾：Web渗透测试以及实战
 ---
 
 
@@ -14,8 +15,6 @@ author: dgtao
 主讲人：菜夹膜  
 
   
-
-
 
 本次分享会主要向大家讲解Web渗透测试的介绍以及运用 **Burp Suite** 以及 **Sqlmap** 进行实战，由于直播视频未准备好，故本次分享会不提供录播视频，下面提供课程资料以及课程PPT ！
 
